@@ -29,12 +29,11 @@
     RegisterDataManager *manager = [[RegisterDataManager alloc] init];
     
     manager.store = store;
-    
     //ManagedUser *user = [ManagedUser MakeUserWithFirstName:@"" WithLastName:@"" WithEmail:@"" WithPassword:@"" WithUserName:@""];
     
-    [manager getUsers:^(BOOL isSuccesful, NSError *error, NSArray *entries) {
-        NSLog(@"%@", entries.firstObject);
-    }];
+//    [manager getUsers:^(BOOL isSuccesful, NSError *error, NSArray *entries) {
+//        NSLog(@"%@", entries.firstObject);
+//    }];
     
 //    [manager createNewUser:user withCompletionBlock:^(BOOL isSuccesful, NSError *error) {
 //        if (!isSuccesful) {
@@ -43,11 +42,8 @@
 //    }];
     
 //    [[StoreWebClient sharedManager] GET:@"https://jsonplaceholder.typicode.com/photos" parameters:nil progress:^(NSProgress * _Nonnull downloadProgress) {
-//        NSLog(@"call");
 //    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-//        NSLog(@"%@", responseObject);
 //    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-//        ;
 //    }];
     
 //    NSDictionary *params = @{@"data" : @"data"

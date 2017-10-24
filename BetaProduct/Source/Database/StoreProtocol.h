@@ -7,23 +7,22 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "CompletionBlockTypes.h"
 
 @class User;
-
-typedef void(^StoreCompletionBlockWithResults)(bool isSuccesful, NSError *error, NSArray *results);
-typedef void(^StoreCompletionBlock)(bool isSuccesful, NSError *error);
+@class Product;
 
 @protocol StoreProtocol <NSObject>
 
 @optional
 
 - (void) fetchEntriesWithEntityName: (NSString *) entityName
-                    completionBlock: (StoreCompletionBlockWithResults) completionBlock;
+                    completionBlock: (CompletionBlockWithResults) completionBlock;
 
 - (void) fetchEntriesWithEntityName: (NSString *) entityName
                           predicate: (NSPredicate *) predicate
                      sortDescriptor: (NSArray *) sortDescriptors
-                    completionBlock: (StoreCompletionBlockWithResults) completionBlock;
+                    completionBlock: (CompletionBlockWithResults) completionBlock;
 
 //- (void) insertNewEntryWithEntityName: (NSString *) entityName
 //                               object: (id) object
@@ -42,6 +41,7 @@ typedef void(^StoreCompletionBlock)(bool isSuccesful, NSError *error);
 //                   completionBlock: (StoreCompletionBlock)completionBlock;
 
 - (User *) newUser;
+- (Product *) newProduct;
 - (void) deleteUser : (User *) user;
 
 @end

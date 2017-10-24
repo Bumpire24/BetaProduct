@@ -11,6 +11,7 @@
 #import "BetaProject.h"
 #import "NSError+Utility.h"
 #import "User.h"
+#import "SyncEngine.h"
 
 @interface StoreCore()
 
@@ -53,7 +54,7 @@
     [self.managedObjectContext save: NULL];
 }
 
-- (void) saveWithCompletionBlock: (StoreCompletionBlock) completionBlock {
+- (void) saveWithCompletionBlock: (CompletionBlock) completionBlock {
     [self.managedObjectContext performBlock:^{
         NSError *error = nil;
         [self.managedObjectContext save:&error];
@@ -66,11 +67,11 @@
 }
 
 #pragma mark - StoreProtocol
-- (void) fetchEntriesWithEntityName:(NSString *)entityName completionBlock:(StoreCompletionBlockWithResults)completionBlock {
+- (void) fetchEntriesWithEntityName:(NSString *)entityName completionBlock:(CompletionBlockWithResults)completionBlock {
     [self fetchEntriesWithEntityName:entityName predicate:nil sortDescriptor:nil completionBlock:completionBlock];
 }
 
-- (void) fetchEntriesWithEntityName:(NSString *)entityName predicate:(NSPredicate *)predicate sortDescriptor:(NSArray *)sortDescriptors completionBlock:(StoreCompletionBlockWithResults)completionBlock {
+- (void) fetchEntriesWithEntityName:(NSString *)entityName predicate:(NSPredicate *)predicate sortDescriptor:(NSArray *)sortDescriptors completionBlock:(CompletionBlockWithResults)completionBlock {
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
     NSEntityDescription *entity = [NSEntityDescription entityForName:entityName inManagedObjectContext:self.managedObjectContext];
     
@@ -104,6 +105,12 @@
 - (User *) newUser {
     NSEntityDescription *entityDescription = [NSEntityDescription entityForName:@"User" inManagedObjectContext:self.managedObjectContext];
     User *newEntry = (User *)[[NSManagedObject alloc] initWithEntity:entityDescription insertIntoManagedObjectContext:self.managedObjectContext];
+    return newEntry;
+}
+
+- (Product *) newProduct {
+    NSEntityDescription *entityDescription = [NSEntityDescription entityForName:@"Product" inManagedObjectContext:self.managedObjectContext];
+    Product *newEntry = (Product *)[[NSManagedObject alloc] initWithEntity:entityDescription insertIntoManagedObjectContext:self.managedObjectContext];
     return newEntry;
 }
 

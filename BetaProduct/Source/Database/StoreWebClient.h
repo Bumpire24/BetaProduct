@@ -7,9 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <AFHTTPSessionManager.h>
+#import <AFNetworking/AFNetworking.h>
+#import "StoreWebClientProtocol.h"
 
-@interface StoreWebClient : AFHTTPSessionManager
+@interface StoreWebClient : AFHTTPSessionManager <StoreWebClientProtocol>
 
 + (StoreWebClient *) sharedManager;
 

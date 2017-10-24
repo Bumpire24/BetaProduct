@@ -50,5 +50,6 @@ typedef NS_ENUM(NSInteger, BetaProjectEntityStatus) {
 
 + (NSURL *) BetaProject_WSmainurl;
 + (NSURL *) BetaProject_WSProductListGETurl;
++ (NSString *) WS_GET_ProductList;
 
 @end

@@ -8,10 +8,11 @@
 
 #import <Foundation/Foundation.h>
 #import "StoreProtocol.h"
+#import "DatabaseTypes.h"
 
 @interface StoreCore : NSObject <StoreProtocol>
 
 - (void) save;
-- (void) saveWithCompletionBlock : (StoreCompletionBlock) completionBlock;
+- (void) saveWithCompletionBlock : (CompletionBlock) completionBlock;
 
 @end

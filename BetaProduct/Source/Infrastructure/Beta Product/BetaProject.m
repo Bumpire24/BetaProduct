@@ -88,4 +88,9 @@ NSString* const kBetaProject_WSMainurl = @"http://jsonplaceholder.typicode.com/"
     return [NSURL URLWithString:kBetaProject_WSMainurl];
 }
 
++ (NSString *) WS_GET_ProductList {
+    return  [NSString stringWithFormat:@"%@posts", kBetaProject_WSMainurl];
+}
+
+
 @end
