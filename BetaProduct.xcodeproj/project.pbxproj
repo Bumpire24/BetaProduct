@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A907639F7D3C4FFD8EE05A3A /* libPods-BetaProduct.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 43B578F1AA57DF2D028509F6 /* libPods-BetaProduct.a */; };
 		CE2A083A1F998B54009B42FB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2A08381F998B54009B42FB /* main.m */; };
 		CE2A08501F998CF0009B42FB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2A084C1F998CEF009B42FB /* ViewController.m */; };
 		CE2A08511F998CF0009B42FB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2A084F1F998CF0009B42FB /* AppDelegate.m */; };
@@ -28,11 +27,14 @@
 		CE34FBF01F9ED33C00F9EA1D /* Product.m in Sources */ = {isa = PBXBuildFile; fileRef = CE34FBEF1F9ED33C00F9EA1D /* Product.m */; };
 		CE34FBF41F9ED67100F9EA1D /* BaseManagedEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = CE34FBF31F9ED67100F9EA1D /* BaseManagedEntity.m */; };
 		CE34FBF91F9ED7A700F9EA1D /* DatabaseTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = CE34FBF81F9ED7A700F9EA1D /* DatabaseTypes.m */; };
+		CE9839001F9F3D8300B177F9 /* Pods_BetaProduct.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9839011F9F3D8300B177F9 /* Pods_BetaProduct.framework */; };
 		CE9D2E1A1F95D65200DC22AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE9D2E181F95D65200DC22AF /* Main.storyboard */; };
 		CE9D2E1F1F95D65200DC22AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE9D2E1E1F95D65200DC22AF /* Assets.xcassets */; };
 		CE9D2E221F95D65200DC22AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE9D2E201F95D65200DC22AF /* LaunchScreen.storyboard */; };
 		CE9D2E2D1F95D65200DC22AF /* BetaProductTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9D2E2C1F95D65200DC22AF /* BetaProductTests.m */; };
 		CE9D2E381F95D65200DC22AF /* BetaProductUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9D2E371F95D65200DC22AF /* BetaProductUITests.m */; };
+		CECD77411F9F1C6D00ED5377 /* SyncEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = CECD77401F9F1C6D00ED5377 /* SyncEngine.m */; };
+		CECD77451F9F1CB000ED5377 /* CompletionBlockTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = CECD77441F9F1CB000ED5377 /* CompletionBlockTypes.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,7 +55,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		43B578F1AA57DF2D028509F6 /* libPods-BetaProduct.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BetaProduct.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		594C0AE0F0B16584CC8243B4 /* Pods-BetaProduct.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BetaProduct.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BetaProduct/Pods-BetaProduct.debug.xcconfig"; sourceTree = "<group>"; };
 		CE2A08371F998B53009B42FB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE2A08381F998B54009B42FB /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CE2A084C1F998CEF009B42FB /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
@@ -93,6 +95,8 @@
 		CE34FBF31F9ED67100F9EA1D /* BaseManagedEntity.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseManagedEntity.m; sourceTree = "<group>"; };
 		CE34FBF71F9ED7A700F9EA1D /* DatabaseTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DatabaseTypes.h; sourceTree = "<group>"; };
 		CE34FBF81F9ED7A700F9EA1D /* DatabaseTypes.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DatabaseTypes.m; sourceTree = "<group>"; };
+		CE9839011F9F3D8300B177F9 /* Pods_BetaProduct.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_BetaProduct.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE9839031F9F3FE800B177F9 /* BetaProduct.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BetaProduct.pch; sourceTree = "<group>"; };
 		CE9D2E0C1F95D65200DC22AF /* BetaProduct.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BetaProduct.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE9D2E191F95D65200DC22AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CE9D2E1E1F95D65200DC22AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -103,8 +107,12 @@
 		CE9D2E331F95D65200DC22AF /* BetaProductUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BetaProductUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE9D2E371F95D65200DC22AF /* BetaProductUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BetaProductUITests.m; sourceTree = "<group>"; };
 		CE9D2E391F95D65200DC22AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CF690C76A3A01182E1A9B051 /* Pods-BetaProduct.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BetaProduct.release.xcconfig"; path = "Pods/Target Support Files/Pods-BetaProduct/Pods-BetaProduct.release.xcconfig"; sourceTree = "<group>"; };
-		FD789E2697E644F8DEC92213 /* Pods-BetaProduct.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BetaProduct.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BetaProduct/Pods-BetaProduct.debug.xcconfig"; sourceTree = "<group>"; };
+		CECD773F1F9F1C6D00ED5377 /* SyncEngine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SyncEngine.h; sourceTree = "<group>"; };
+		CECD77401F9F1C6D00ED5377 /* SyncEngine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SyncEngine.m; sourceTree = "<group>"; };
+		CECD77431F9F1CB000ED5377 /* CompletionBlockTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CompletionBlockTypes.h; sourceTree = "<group>"; };
+		CECD77441F9F1CB000ED5377 /* CompletionBlockTypes.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CompletionBlockTypes.m; sourceTree = "<group>"; };
+		CECD77461F9F21C500ED5377 /* StoreWebClientProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StoreWebClientProtocol.h; sourceTree = "<group>"; };
+		F342EDDB72C782F81A2FFBB9 /* Pods-BetaProduct.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BetaProduct.release.xcconfig"; path = "Pods/Target Support Files/Pods-BetaProduct/Pods-BetaProduct.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,7 +120,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A907639F7D3C4FFD8EE05A3A /* libPods-BetaProduct.a in Frameworks */,
+				CE9839001F9F3D8300B177F9 /* Pods_BetaProduct.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,11 +141,11 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5760BFFFF7BE9D07EC27F3C0 /* Pods */ = {
+		59FF004B655FF79A2FFDC5A5 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				FD789E2697E644F8DEC92213 /* Pods-BetaProduct.debug.xcconfig */,
-				CF690C76A3A01182E1A9B051 /* Pods-BetaProduct.release.xcconfig */,
+				594C0AE0F0B16584CC8243B4 /* Pods-BetaProduct.debug.xcconfig */,
+				F342EDDB72C782F81A2FFBB9 /* Pods-BetaProduct.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -145,7 +153,7 @@
 		AB5B2097C59C086E98D90678 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				43B578F1AA57DF2D028509F6 /* libPods-BetaProduct.a */,
+				CE9839011F9F3D8300B177F9 /* Pods_BetaProduct.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -183,6 +191,7 @@
 			children = (
 				CE2A08371F998B53009B42FB /* Info.plist */,
 				CE2A08381F998B54009B42FB /* main.m */,
+				CE9839031F9F3FE800B177F9 /* BetaProduct.pch */,
 			);
 			path = "Support Files";
 			sourceTree = "<group>";
@@ -208,6 +217,9 @@
 				CE2A08651F998D2C009B42FB /* StoreUserSession.m */,
 				CE2A08671F998D2C009B42FB /* StoreWebClient.h */,
 				CE2A08681F998D2C009B42FB /* StoreWebClient.m */,
+				CECD773F1F9F1C6D00ED5377 /* SyncEngine.h */,
+				CECD77401F9F1C6D00ED5377 /* SyncEngine.m */,
+				CECD77461F9F21C500ED5377 /* StoreWebClientProtocol.h */,
 			);
 			path = Database;
 			sourceTree = "<group>";
@@ -370,6 +382,8 @@
 			children = (
 				CE34FBF71F9ED7A700F9EA1D /* DatabaseTypes.h */,
 				CE34FBF81F9ED7A700F9EA1D /* DatabaseTypes.m */,
+				CECD77431F9F1CB000ED5377 /* CompletionBlockTypes.h */,
+				CECD77441F9F1CB000ED5377 /* CompletionBlockTypes.m */,
 			);
 			path = TypeDefinitions;
 			sourceTree = "<group>";
@@ -452,8 +466,8 @@
 				CE9D2E2B1F95D65200DC22AF /* BetaProductTests */,
 				CE9D2E361F95D65200DC22AF /* BetaProductUITests */,
 				CE9D2E0D1F95D65200DC22AF /* Products */,
-				5760BFFFF7BE9D07EC27F3C0 /* Pods */,
 				AB5B2097C59C086E98D90678 /* Frameworks */,
+				59FF004B655FF79A2FFDC5A5 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -502,12 +516,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE9D2E3C1F95D65200DC22AF /* Build configuration list for PBXNativeTarget "BetaProduct" */;
 			buildPhases = (
-				1831E315ED00027EBF079F2A /* [CP] Check Pods Manifest.lock */,
+				38EBBFF63F41E3065205C965 /* [CP] Check Pods Manifest.lock */,
 				CE9D2E081F95D65200DC22AF /* Sources */,
 				CE9D2E091F95D65200DC22AF /* Frameworks */,
 				CE9D2E0A1F95D65200DC22AF /* Resources */,
-				BE6C8CDD34F990CEE9529BBA /* [CP] Embed Pods Frameworks */,
-				A5384FC235F2542B6B9B4CE4 /* [CP] Copy Pods Resources */,
+				BDD74F3D635BF6878229F0A4 /* [CP] Embed Pods Frameworks */,
+				AD458DB00F716DDA4FEDA589 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -625,7 +639,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1831E315ED00027EBF079F2A /* [CP] Check Pods Manifest.lock */ = {
+		38EBBFF63F41E3065205C965 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -643,7 +657,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A5384FC235F2542B6B9B4CE4 /* [CP] Copy Pods Resources */ = {
+		AD458DB00F716DDA4FEDA589 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -658,15 +672,20 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BetaProduct/Pods-BetaProduct-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		BE6C8CDD34F990CEE9529BBA /* [CP] Embed Pods Frameworks */ = {
+		BDD74F3D635BF6878229F0A4 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BetaProduct/Pods-BetaProduct-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaLumberjack.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -682,7 +701,9 @@
 			files = (
 				CE2A083A1F998B54009B42FB /* main.m in Sources */,
 				CE2A08511F998CF0009B42FB /* AppDelegate.m in Sources */,
+				CECD77411F9F1C6D00ED5377 /* SyncEngine.m in Sources */,
 				CE34FBE61F9ECA6800F9EA1D /* AppDependencies.m in Sources */,
+				CECD77451F9F1CB000ED5377 /* CompletionBlockTypes.m in Sources */,
 				CE2A08601F998D24009B42FB /* User.m in Sources */,
 				CE2A086B1F998D2C009B42FB /* StoreUserSession.m in Sources */,
 				CE34FBF41F9ED67100F9EA1D /* BaseManagedEntity.m in Sources */,
@@ -853,16 +874,19 @@
 		};
 		CE9D2E3D1F95D65200DC22AF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FD789E2697E644F8DEC92213 /* Pods-BetaProduct.debug.xcconfig */;
+			baseConfigurationReference = 594C0AE0F0B16584CC8243B4 /* Pods-BetaProduct.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "/Users/user/Desktop/Workspace/Migs/Xcode Projects/Beta Product/BetaProduct/BetaProduct/Support Files/BetaProduct.pch";
 				INFOPLIST_FILE = "BetaProduct/Support Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
-					"-l\"AFNetworking\"",
 					"-framework",
 					"\"CoreGraphics\"",
 					"-framework",
@@ -879,16 +903,19 @@
 		};
 		CE9D2E3E1F95D65200DC22AF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CF690C76A3A01182E1A9B051 /* Pods-BetaProduct.release.xcconfig */;
+			baseConfigurationReference = F342EDDB72C782F81A2FFBB9 /* Pods-BetaProduct.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "/Users/user/Desktop/Workspace/Migs/Xcode Projects/Beta Product/BetaProduct/BetaProduct/Support Files/BetaProduct.pch";
 				INFOPLIST_FILE = "BetaProduct/Support Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
-					"-l\"AFNetworking\"",
 					"-framework",
 					"\"CoreGraphics\"",
 					"-framework",
