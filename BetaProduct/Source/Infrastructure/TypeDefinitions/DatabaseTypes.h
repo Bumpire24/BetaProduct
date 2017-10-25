@@ -11,15 +11,15 @@
 @interface DatabaseTypes : NSObject
 
 typedef NS_ENUM(int16_t, SyncStatus) {
-    SyncStatusSynced = 0,
+    SyncStatusSynced = 1,
     SyncStatusCreated,
     SyncStatusUpdated,
     SyncStatusDeleted
 };
 
 typedef NS_ENUM(int16_t, Status) {
-    StatusInactive = 0,
-    StatusActive,
+    StatusActive = 1,
+    StatusInactive,
     StatusDeleted
 };
 

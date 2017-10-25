@@ -21,6 +21,7 @@
     
     AppDependencies *dependencies = [[AppDependencies alloc] init];
     self.appDependencies = dependencies;
+    [self.appDependencies installRootViewControllerInWindow:self.window];
     
     return YES;
 }

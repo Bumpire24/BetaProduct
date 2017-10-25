@@ -21,6 +21,14 @@
 		CE2A086D1F998D2C009B42FB /* StoreWebClient.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2A08681F998D2C009B42FB /* StoreWebClient.m */; };
 		CE2A08701F998D38009B42FB /* RegisterDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2A086F1F998D38009B42FB /* RegisterDataManager.m */; };
 		CE2A08741F998DA9009B42FB /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE2A08731F998DA9009B42FB /* Default-568h@2x.png */; };
+		CE2C3D541FA02A0800DD2E22 /* WSConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2C3D531FA02A0800DD2E22 /* WSConverter.m */; };
+		CE2C3D811FA054B600DD2E22 /* ProductManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2C3D801FA054B600DD2E22 /* ProductManager.m */; };
+		CE2C3D861FA059AB00DD2E22 /* BaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2C3D851FA059AB00DD2E22 /* BaseManager.m */; };
+		CE2C3D8A1FA0623200DD2E22 /* ProductListInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2C3D891FA0623200DD2E22 /* ProductListInteractor.m */; };
+		CE2C3D8D1FA0665C00DD2E22 /* ProductListPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2C3D8C1FA0665C00DD2E22 /* ProductListPresenter.m */; };
+		CE2C3D911FA076B400DD2E22 /* RootWireFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2C3D901FA076B400DD2E22 /* RootWireFrame.m */; };
+		CE2C3D961FA07BE300DD2E22 /* ProductListWireFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2C3D951FA07BE300DD2E22 /* ProductListWireFrame.m */; };
+		CE2C3D991FA07C2900DD2E22 /* ProductListView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2C3D981FA07C2900DD2E22 /* ProductListView.m */; };
 		CE34FBE61F9ECA6800F9EA1D /* AppDependencies.m in Sources */ = {isa = PBXBuildFile; fileRef = CE34FBE51F9ECA6800F9EA1D /* AppDependencies.m */; };
 		CE34FBE91F9ECEB200F9EA1D /* ManagedProduct.m in Sources */ = {isa = PBXBuildFile; fileRef = CE34FBE81F9ECEB200F9EA1D /* ManagedProduct.m */; };
 		CE34FBEC1F9ECF3800F9EA1D /* BaseEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = CE34FBEB1F9ECF3800F9EA1D /* BaseEntity.m */; };
@@ -83,6 +91,25 @@
 		CE2A086E1F998D38009B42FB /* RegisterDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterDataManager.h; sourceTree = "<group>"; };
 		CE2A086F1F998D38009B42FB /* RegisterDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterDataManager.m; sourceTree = "<group>"; };
 		CE2A08731F998DA9009B42FB /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		CE2C3D521FA02A0800DD2E22 /* WSConverter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WSConverter.h; sourceTree = "<group>"; };
+		CE2C3D531FA02A0800DD2E22 /* WSConverter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WSConverter.m; sourceTree = "<group>"; };
+		CE2C3D7F1FA054B600DD2E22 /* ProductManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductManager.h; sourceTree = "<group>"; };
+		CE2C3D801FA054B600DD2E22 /* ProductManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProductManager.m; sourceTree = "<group>"; };
+		CE2C3D841FA059AB00DD2E22 /* BaseManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseManager.h; sourceTree = "<group>"; };
+		CE2C3D851FA059AB00DD2E22 /* BaseManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseManager.m; sourceTree = "<group>"; };
+		CE2C3D871FA061BC00DD2E22 /* ProductListInteractorIO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductListInteractorIO.h; sourceTree = "<group>"; };
+		CE2C3D881FA0623200DD2E22 /* ProductListInteractor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductListInteractor.h; sourceTree = "<group>"; };
+		CE2C3D891FA0623200DD2E22 /* ProductListInteractor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProductListInteractor.m; sourceTree = "<group>"; };
+		CE2C3D8B1FA0665C00DD2E22 /* ProductListPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductListPresenter.h; sourceTree = "<group>"; };
+		CE2C3D8C1FA0665C00DD2E22 /* ProductListPresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProductListPresenter.m; sourceTree = "<group>"; };
+		CE2C3D8F1FA076B400DD2E22 /* RootWireFrame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootWireFrame.h; sourceTree = "<group>"; };
+		CE2C3D901FA076B400DD2E22 /* RootWireFrame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootWireFrame.m; sourceTree = "<group>"; };
+		CE2C3D931FA07BB800DD2E22 /* ProductListModuleProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductListModuleProtocol.h; sourceTree = "<group>"; };
+		CE2C3D941FA07BE300DD2E22 /* ProductListWireFrame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductListWireFrame.h; sourceTree = "<group>"; };
+		CE2C3D951FA07BE300DD2E22 /* ProductListWireFrame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProductListWireFrame.m; sourceTree = "<group>"; };
+		CE2C3D971FA07C2900DD2E22 /* ProductListView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductListView.h; sourceTree = "<group>"; };
+		CE2C3D981FA07C2900DD2E22 /* ProductListView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProductListView.m; sourceTree = "<group>"; };
+		CE2C3D9A1FA07C4000DD2E22 /* ProductListViewProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductListViewProtocol.h; sourceTree = "<group>"; };
 		CE34FBE41F9ECA6800F9EA1D /* AppDependencies.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDependencies.h; sourceTree = "<group>"; };
 		CE34FBE51F9ECA6800F9EA1D /* AppDependencies.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDependencies.m; sourceTree = "<group>"; };
 		CE34FBE71F9ECEB200F9EA1D /* ManagedProduct.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ManagedProduct.h; sourceTree = "<group>"; };
@@ -172,6 +199,7 @@
 		CE2A082E1F998AB2009B42FB /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				CE2C3D8E1FA0768E00DD2E22 /* VIew */,
 				CE2A084E1F998CF0009B42FB /* AppDelegate.h */,
 				CE2A084F1F998CF0009B42FB /* AppDelegate.m */,
 				CE2A084D1F998CEF009B42FB /* ViewController.h */,
@@ -199,6 +227,8 @@
 		CE2A083B1F998B63009B42FB /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				CE2C3D821FA0554900DD2E22 /* Base */,
+				CE2C3D6A1FA0542600DD2E22 /* ProductList */,
 				CE34FBFC1F9EE00A00F9EA1D /* ProductDetail */,
 				CE2A08431F998C43009B42FB /* Register */,
 			);
@@ -220,6 +250,8 @@
 				CECD773F1F9F1C6D00ED5377 /* SyncEngine.h */,
 				CECD77401F9F1C6D00ED5377 /* SyncEngine.m */,
 				CECD77461F9F21C500ED5377 /* StoreWebClientProtocol.h */,
+				CE2C3D521FA02A0800DD2E22 /* WSConverter.h */,
+				CE2C3D531FA02A0800DD2E22 /* WSConverter.m */,
 			);
 			path = Database;
 			sourceTree = "<group>";
@@ -357,6 +389,116 @@
 			children = (
 			);
 			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		CE2C3D6A1FA0542600DD2E22 /* ProductList */ = {
+			isa = PBXGroup;
+			children = (
+				CE2C3D6B1FA0542600DD2E22 /* Module Interface */,
+				CE2C3D6D1FA0542600DD2E22 /* Application Logic */,
+				CE2C3D721FA0542600DD2E22 /* User Interface */,
+			);
+			path = ProductList;
+			sourceTree = "<group>";
+		};
+		CE2C3D6B1FA0542600DD2E22 /* Module Interface */ = {
+			isa = PBXGroup;
+			children = (
+				CE2C3D931FA07BB800DD2E22 /* ProductListModuleProtocol.h */,
+			);
+			path = "Module Interface";
+			sourceTree = "<group>";
+		};
+		CE2C3D6D1FA0542600DD2E22 /* Application Logic */ = {
+			isa = PBXGroup;
+			children = (
+				CE2C3D6E1FA0542600DD2E22 /* Manager */,
+				CE2C3D701FA0542600DD2E22 /* Interactor */,
+			);
+			path = "Application Logic";
+			sourceTree = "<group>";
+		};
+		CE2C3D6E1FA0542600DD2E22 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				CE2C3D7F1FA054B600DD2E22 /* ProductManager.h */,
+				CE2C3D801FA054B600DD2E22 /* ProductManager.m */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		CE2C3D701FA0542600DD2E22 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				CE2C3D871FA061BC00DD2E22 /* ProductListInteractorIO.h */,
+				CE2C3D881FA0623200DD2E22 /* ProductListInteractor.h */,
+				CE2C3D891FA0623200DD2E22 /* ProductListInteractor.m */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		CE2C3D721FA0542600DD2E22 /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				CE2C3D731FA0542600DD2E22 /* Presenter */,
+				CE2C3D751FA0542600DD2E22 /* Wireframe */,
+				CE2C3D771FA0542600DD2E22 /* View */,
+			);
+			path = "User Interface";
+			sourceTree = "<group>";
+		};
+		CE2C3D731FA0542600DD2E22 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				CE2C3D8B1FA0665C00DD2E22 /* ProductListPresenter.h */,
+				CE2C3D8C1FA0665C00DD2E22 /* ProductListPresenter.m */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		CE2C3D751FA0542600DD2E22 /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				CE2C3D941FA07BE300DD2E22 /* ProductListWireFrame.h */,
+				CE2C3D951FA07BE300DD2E22 /* ProductListWireFrame.m */,
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		CE2C3D771FA0542600DD2E22 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE2C3D971FA07C2900DD2E22 /* ProductListView.h */,
+				CE2C3D981FA07C2900DD2E22 /* ProductListView.m */,
+				CE2C3D9A1FA07C4000DD2E22 /* ProductListViewProtocol.h */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE2C3D821FA0554900DD2E22 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				CE2C3D831FA0599600DD2E22 /* Application Logic */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		CE2C3D831FA0599600DD2E22 /* Application Logic */ = {
+			isa = PBXGroup;
+			children = (
+				CE2C3D841FA059AB00DD2E22 /* BaseManager.h */,
+				CE2C3D851FA059AB00DD2E22 /* BaseManager.m */,
+			);
+			path = "Application Logic";
+			sourceTree = "<group>";
+		};
+		CE2C3D8E1FA0768E00DD2E22 /* VIew */ = {
+			isa = PBXGroup;
+			children = (
+				CE2C3D8F1FA076B400DD2E22 /* RootWireFrame.h */,
+				CE2C3D901FA076B400DD2E22 /* RootWireFrame.m */,
+			);
+			path = VIew;
 			sourceTree = "<group>";
 		};
 		CE34FBED1F9ECF3D00F9EA1D /* Base */ = {
@@ -681,11 +823,13 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-BetaProduct/Pods-BetaProduct-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
 				"${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaLumberjack.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -699,26 +843,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE2C3D961FA07BE300DD2E22 /* ProductListWireFrame.m in Sources */,
 				CE2A083A1F998B54009B42FB /* main.m in Sources */,
+				CE2C3D8A1FA0623200DD2E22 /* ProductListInteractor.m in Sources */,
 				CE2A08511F998CF0009B42FB /* AppDelegate.m in Sources */,
 				CECD77411F9F1C6D00ED5377 /* SyncEngine.m in Sources */,
 				CE34FBE61F9ECA6800F9EA1D /* AppDependencies.m in Sources */,
 				CECD77451F9F1CB000ED5377 /* CompletionBlockTypes.m in Sources */,
 				CE2A08601F998D24009B42FB /* User.m in Sources */,
+				CE2C3D911FA076B400DD2E22 /* RootWireFrame.m in Sources */,
+				CE2C3D861FA059AB00DD2E22 /* BaseManager.m in Sources */,
 				CE2A086B1F998D2C009B42FB /* StoreUserSession.m in Sources */,
 				CE34FBF41F9ED67100F9EA1D /* BaseManagedEntity.m in Sources */,
 				CE34FBF01F9ED33C00F9EA1D /* Product.m in Sources */,
 				CE2A08501F998CF0009B42FB /* ViewController.m in Sources */,
+				CE2C3D991FA07C2900DD2E22 /* ProductListView.m in Sources */,
 				CE2A086C1F998D2C009B42FB /* StoreCore.m in Sources */,
 				CE2A086D1F998D2C009B42FB /* StoreWebClient.m in Sources */,
 				CE34FBE91F9ECEB200F9EA1D /* ManagedProduct.m in Sources */,
 				CE2A086A1F998D2C009B42FB /* BetaProduct.xcdatamodeld in Sources */,
+				CE2C3D8D1FA0665C00DD2E22 /* ProductListPresenter.m in Sources */,
 				CE2A08701F998D38009B42FB /* RegisterDataManager.m in Sources */,
 				CE34FBF91F9ED7A700F9EA1D /* DatabaseTypes.m in Sources */,
 				CE2A085A1F998D0F009B42FB /* NSArray+Utility.m in Sources */,
 				CE2A085D1F998D1C009B42FB /* ManagedUser.m in Sources */,
+				CE2C3D811FA054B600DD2E22 /* ProductManager.m in Sources */,
 				CE2A08541F998D08009B42FB /* BetaProject.m in Sources */,
 				CE2A08591F998D0F009B42FB /* NSError+Utility.m in Sources */,
+				CE2C3D541FA02A0800DD2E22 /* WSConverter.m in Sources */,
 				CE34FBEC1F9ECF3800F9EA1D /* BaseEntity.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

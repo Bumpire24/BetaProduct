@@ -13,6 +13,7 @@
 #import "NSArray+Utility.h"
 #import "NSError+Utility.h"
 #import "BetaProject.h"
+#import "DatabaseTypes.h"
 
 @implementation RegisterDataManager
 
@@ -34,7 +35,7 @@
 
 - (void) updateUser:(ManagedUser *)user withCompletionBlock:(DataManagerCompletionBlock)completionBlock {
     // Retrieve User First
-    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"createdAt = %@ AND modifiedAt = %@ AND status != %d",user.createdAt, user.modifiedAt, BetaProjectEntityStatusDeleted];
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"createdAt = %@ AND modifiedAt = %@ AND status != %d",user.createdAt, user.modifiedAt, StatusDeleted];
     [self.store fetchEntriesWithEntityName:@"User" predicate:predicate sortDescriptor:nil completionBlock:^(bool isSuccesful, NSError *error, NSArray *results) {
         if (isSuccesful) {
             if (results.count > 0) {
@@ -61,7 +62,7 @@
 
 - (void) deleteUser:(ManagedUser *)user withCompletionBlock:(DataManagerCompletionBlock)completionBlock {
     // Retrieve User First
-    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"createdAt = %@ AND modifiedAt = %@ AND status != %d",user.createdAt, user.modifiedAt, BetaProjectEntityStatusDeleted];
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"createdAt = %@ AND modifiedAt = %@ AND status != %d",user.createdAt, user.modifiedAt, StatusDeleted];
     [self.store fetchEntriesWithEntityName:@"User" predicate:predicate sortDescriptor:nil completionBlock:^(bool isSuccesful, NSError *error, NSArray *results) {
         if (isSuccesful) {
             if (results.count > 0) {
@@ -86,7 +87,7 @@
 
 - (void) deleteUserSoftly:(ManagedUser *)user withCompletionBlock:(DataManagerCompletionBlock)completionBlock {
     // Retrieve User First
-    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"createdAt = %@ AND modifiedAt = %@ AND status != %d",user.createdAt, user.modifiedAt, BetaProjectEntityStatusDeleted];
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"createdAt = %@ AND modifiedAt = %@ AND status != %d",user.createdAt, user.modifiedAt, StatusDeleted];
     [self.store fetchEntriesWithEntityName:@"User" predicate:predicate sortDescriptor:nil completionBlock:^(bool isSuccesful, NSError *error, NSArray *results) {
         if (isSuccesful) {
             if (results.count > 0) {
@@ -106,7 +107,7 @@
 }
 
 - (void) getUserByFirstName:(NSString *)firstName andLastName:(NSString *)lastName withCompletionBlock:(DataManagerCompletionBlockWithResult)completionBlock {
-    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"firstname = %@ AND lastname = %@ AND status != %d",firstName, lastName, BetaProjectEntityStatusDeleted];
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"firstname = %@ AND lastname = %@ AND status != %d",firstName, lastName, StatusDeleted];
     [self.store fetchEntriesWithEntityName:@"User" predicate:predicate sortDescriptor:nil completionBlock:^(bool isSuccesful, NSError *error, NSArray *results) {
         if (isSuccesful) {
             if (results.count > 0) {
@@ -122,7 +123,7 @@
 }
 
 - (void) getUsers:(DataManagerCompletionBlockWithResults)completionBlock {
-    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"status != %d", BetaProjectEntityStatusDeleted];
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"status != %d", StatusDeleted];
     [self.store fetchEntriesWithEntityName:@"User" predicate:predicate sortDescriptor:nil completionBlock:^(bool isSuccesful, NSError *error, NSArray *results) {
         __weak typeof(self) welf = self;
         if (isSuccesful) {

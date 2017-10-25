@@ -17,6 +17,6 @@
 @property(nonatomic, nullable, copy) NSString *priceDescription;
 @property(nonatomic, nullable, copy) NSString *imageUrl;
 @property(nonatomic, nullable, copy) NSString *imageCompanyUrl;
-@property(nonatomic) UInt32 productId;
+@property(nonatomic, nullable, copy) NSNumber *productId;
 
 @end

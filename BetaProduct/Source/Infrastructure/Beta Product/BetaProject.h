@@ -18,13 +18,8 @@ extern NSString* const kBetaProject_WSMainurl;
 typedef NS_ENUM(NSInteger, BetaProjectError)
 {
     BetaProjectErrorDatabase = 1000,
+    BetaProjectErrorWS,
     BetaProjectErrorBusiness
-};
-
-typedef NS_ENUM(NSInteger, BetaProjectEntityStatus) {
-    BetaProjectEntityStatusActive = 1,
-    BetaProjectEntityStatusInActive = 2,
-    BetaProjectEntityStatusDeleted = 3
 };
 
 // Events

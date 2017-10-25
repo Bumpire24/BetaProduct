@@ -11,6 +11,7 @@
 #import "BetaProject.h"
 #import "StoreCore.h"
 #import "Product.h"
+#import "WSConverter.h"
 
 @interface SyncEngine()
 //@property (nonatomic, strong) NSMutableArray *registeredClassesForSync;
@@ -23,6 +24,7 @@
 
 #pragma mark - Public
 - (void) startInitialSync : (CompletionBlock) block{
+    DDLogInfo(@"Sync started");
     [[StoreWebClient sharedManager] GET:BetaProject.WS_GET_ProductList withParameters:nil :^(bool isSuccesful, NSError *error, NSArray *results) {
         if (!isSuccesful) {
             DDLogError(@"Description : %@, Reason : %@, Suggestion : %@, Error : %@", error.localizedDescription, error.localizedFailureReason, error.localizedFailureReason, error);
@@ -33,11 +35,15 @@
             
             for (NSDictionary *dict in results) {
                 Product *product = [self.store newProduct];
-//                product.status = StatusActive;
-//                product.syncStatus = SyncStatusSynced;
+                WSConverter *converter = [[WSConverter alloc] initWithDictionary:dict];
+                product.productId = [converter numberWithKey:@"id"];
+                product.name = [converter stringWithKey:@"title"];
+                product.productDescription = [converter stringWithKey:@"body"];
+                product.priceDescription = [converter stringWithKey:@"body"];
+                product.status = StatusActive;
+                product.syncStatus = SyncStatusSynced;
                 product.createdAt = [NSDate date];
                 product.modifiedAt = [NSDate date];
-                product.name = [dict objectForKey:@"title"];
                 dispatch_group_enter(downloadGroup);
                 [self.store saveWithCompletionBlock:^(bool isSuccesful, NSError *error) {
                     if (!isSuccesful) {
@@ -53,6 +59,7 @@
                 }
             });
         }
+        DDLogInfo(@"Sync ended");
     }];
 }
 

@@ -5,6 +5,7 @@ use_frameworks!
 def pods
     pod 'AFNetworking'
     pod 'CocoaLumberjack'
+    pod 'MBProgressHUD'
 end
 
 target 'BetaProduct' do

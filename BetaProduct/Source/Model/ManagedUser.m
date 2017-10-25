@@ -8,6 +8,7 @@
 
 #import "ManagedUser.h"
 #import "BetaProject.h"
+#import "DatabaseTypes.h"
 
 @implementation ManagedUser
 
@@ -21,7 +22,7 @@
         self.email = @"";
         self.createdAt = [NSDate date];
         self.modifiedAt = [NSDate date];
-        self.status = BetaProjectEntityStatusActive;
+        self.status = StatusActive;
     }
     return self;
 }

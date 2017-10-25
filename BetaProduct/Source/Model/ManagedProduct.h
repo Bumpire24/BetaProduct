@@ -18,7 +18,7 @@
 @property(nonatomic, copy) NSString *priceDescription;
 @property(nonatomic, copy) NSString *imageUrl;
 @property(nonatomic, copy) NSString *imageCompanyUrl;
-@property(nonatomic) UInt32 productId;
+@property(nonatomic) NSUInteger productId;
 
 + (instancetype) MakeProductWithName: (NSString *) name
                      WithDescription: (NSString *) description
@@ -27,7 +27,7 @@
                             WithLink: (NSString *) link
                        WithImageLink: (NSString *) imageUrl
                 WithCompanyImageLink: (NSString *) companyImageUrl
-                       WithProductId: (NSInteger) productId;
+                       WithProductId: (NSUInteger) productId;
 
 + (instancetype) MakeProductWithName: (NSString *) name
                      WithDescription: (NSString *) description
@@ -36,7 +36,7 @@
                             WithLink: (NSString *) link
                        WithImageLink: (NSString *) imageUrl
                 WithCompanyImageLink: (NSString *) companyImageUrl
-                       WithProductId: (NSInteger) productId
+                       WithProductId: (NSUInteger) productId
                           WithStatus: (Status) status;
 
 @end

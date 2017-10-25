@@ -20,7 +20,7 @@ static StoreWebClient *staticStoreWebClient = nil;
 - (id) initWithBaseURL:(NSURL *)url {
     self = [super initWithBaseURL:url];
     if (self) {
-        [self.responseSerializer setAcceptableContentTypes:[NSSet setWithArray:@[@"application/json"]]];
+        [self.responseSerializer setAcceptableContentTypes:[NSSet setWithArray:@[@"application/json", @"text/json"]]];
     }
     return self;
 }
