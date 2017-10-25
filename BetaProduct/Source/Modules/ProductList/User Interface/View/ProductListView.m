@@ -56,12 +56,13 @@
     static NSString *CellIdentifier = @"Cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:CellIdentifier];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
     }
     
     ManagedProduct *product = self.products[indexPath.row];
     __weak UITableViewCell *weakCell = cell;
     cell.textLabel.text = product.name;
+    cell.detailTextLabel.text = product.imageUrl;
     UIImage *placeholderImage = [UIImage imageNamed:@"placeholder.png"];
 //    UIImageView *imageview = [[UIImageView alloc] init];
     [cell.imageView setImageWithURLRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:product.imageUrl]] placeholderImage:placeholderImage success:^(NSURLRequest * _Nonnull request, NSHTTPURLResponse * _Nullable response, UIImage * _Nonnull image) {

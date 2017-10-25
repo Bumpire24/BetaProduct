@@ -19,49 +19,64 @@
 @end
 
 @implementation SyncEngine
+static NSString *kInitialSyncComplete = @"InitialSyncComplete";
 
-#pragma mark - Private 
+#pragma mark - Private
+- (BOOL) isInitialSyncComplete {
+    return [[NSUserDefaults standardUserDefaults] objectForKey:kInitialSyncComplete];
+}
+
+- (void) markInitialSyncAsComplete {
+    [[NSUserDefaults standardUserDefaults] setObject:kInitialSyncComplete forKey:kInitialSyncComplete];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+}
 
 #pragma mark - Public
 - (void) startInitialSync : (CompletionBlock) block{
-    DDLogInfo(@"Sync started");
-    [[StoreWebClient sharedManager] GET:BetaProject.WS_GET_ProductList withParameters:nil :^(bool isSuccesful, NSError *error, NSArray *results) {
-        if (!isSuccesful) {
-            DDLogError(@"Description : %@, Reason : %@, Suggestion : %@, Error : %@", error.localizedDescription, error.localizedFailureReason, error.localizedFailureReason, error);
-            block(isSuccesful, error);
-        } else {
-            __block NSError *GCDerror;
-            dispatch_group_t downloadGroup = dispatch_group_create();
-            
-            for (NSDictionary *dict in results) {
-                Product *product = [self.store newProduct];
-                WSConverter *converter = [[WSConverter alloc] initWithDictionary:dict];
-                product.productId = [converter numberWithKey:@"id"];
-                product.name = [converter stringWithKey:@"title"];
-                product.productDescription = [converter stringWithKey:@"body"];
-                product.priceDescription = [converter stringWithKey:@"body"];
-                product.imageUrl = [converter stringWithKey:@"thumbnailUrl"];
-                product.status = StatusActive;
-                product.syncStatus = SyncStatusSynced;
-                product.createdAt = [NSDate date];
-                product.modifiedAt = [NSDate date];
-                dispatch_group_enter(downloadGroup);
-                [self.store saveWithCompletionBlock:^(bool isSuccesful, NSError *error) {
-                    if (!isSuccesful) {
-                        DDLogError(@"Description : %@, Reason : %@, Suggestion : %@, Error : %@", error.localizedDescription, error.localizedFailureReason, error.localizedFailureReason, error);
-                    }
-                    dispatch_group_leave(downloadGroup);
-                }];
-            }
-            
-            dispatch_group_notify(downloadGroup, dispatch_get_main_queue(), ^{
-                if (block) {
-                    block(true, GCDerror);
+    if ([self isInitialSyncComplete]) {
+        DDLogInfo(@"Already did Initial Sync");
+        block(true, nil);
+    } else {
+        DDLogInfo(@"Sync started");
+        [[StoreWebClient sharedManager] GET:BetaProject.WS_GET_ProductList withParameters:nil :^(bool isSuccesful, NSError *error, NSArray *results) {
+            if (!isSuccesful) {
+                DDLogError(@"Description : %@, Reason : %@, Suggestion : %@, Error : %@", error.localizedDescription, error.localizedFailureReason, error.localizedFailureReason, error);
+                block(isSuccesful, error);
+            } else {
+                __block NSError *GCDerror;
+                dispatch_group_t downloadGroup = dispatch_group_create();
+                
+                for (NSDictionary *dict in results) {
+                    Product *product = [self.store newProduct];
+                    WSConverter *converter = [[WSConverter alloc] initWithDictionary:dict];
+                    product.productId = [converter numberWithKey:@"id"];
+                    product.name = [converter stringWithKey:@"title"];
+                    product.productDescription = [converter stringWithKey:@"body"];
+                    product.priceDescription = [converter stringWithKey:@"body"];
+                    product.imageUrl = [converter stringWithKey:@"thumbnailUrl"];
+                    product.status = StatusActive;
+                    product.syncStatus = SyncStatusSynced;
+                    product.createdAt = [NSDate date];
+                    product.modifiedAt = [NSDate date];
+                    dispatch_group_enter(downloadGroup);
+                    [self.store saveWithCompletionBlock:^(bool isSuccesful, NSError *error) {
+                        if (!isSuccesful) {
+                            DDLogError(@"Description : %@, Reason : %@, Suggestion : %@, Error : %@", error.localizedDescription, error.localizedFailureReason, error.localizedFailureReason, error);
+                        }
+                        dispatch_group_leave(downloadGroup);
+                    }];
                 }
-            });
-        }
-        DDLogInfo(@"Sync ended");
-    }];
+                
+                dispatch_group_notify(downloadGroup, dispatch_get_main_queue(), ^{
+                    if (block) {
+                        [self markInitialSyncAsComplete];
+                        block(true, GCDerror);
+                    }
+                });
+            }
+            DDLogInfo(@"Sync ended");
+        }];
+    }
 }
 
 + (SyncEngine *) sharedManager {
