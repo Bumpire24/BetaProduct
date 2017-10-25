@@ -29,6 +29,7 @@
 		CE2C3D911FA076B400DD2E22 /* RootWireFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2C3D901FA076B400DD2E22 /* RootWireFrame.m */; };
 		CE2C3D961FA07BE300DD2E22 /* ProductListWireFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2C3D951FA07BE300DD2E22 /* ProductListWireFrame.m */; };
 		CE2C3D991FA07C2900DD2E22 /* ProductListView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2C3D981FA07C2900DD2E22 /* ProductListView.m */; };
+		CE2C3D9C1FA0989900DD2E22 /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = CE2C3D9B1FA0989800DD2E22 /* placeholder.png */; };
 		CE34FBE61F9ECA6800F9EA1D /* AppDependencies.m in Sources */ = {isa = PBXBuildFile; fileRef = CE34FBE51F9ECA6800F9EA1D /* AppDependencies.m */; };
 		CE34FBE91F9ECEB200F9EA1D /* ManagedProduct.m in Sources */ = {isa = PBXBuildFile; fileRef = CE34FBE81F9ECEB200F9EA1D /* ManagedProduct.m */; };
 		CE34FBEC1F9ECF3800F9EA1D /* BaseEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = CE34FBEB1F9ECF3800F9EA1D /* BaseEntity.m */; };
@@ -110,6 +111,7 @@
 		CE2C3D971FA07C2900DD2E22 /* ProductListView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductListView.h; sourceTree = "<group>"; };
 		CE2C3D981FA07C2900DD2E22 /* ProductListView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProductListView.m; sourceTree = "<group>"; };
 		CE2C3D9A1FA07C4000DD2E22 /* ProductListViewProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductListViewProtocol.h; sourceTree = "<group>"; };
+		CE2C3D9B1FA0989800DD2E22 /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder.png; sourceTree = "<group>"; };
 		CE34FBE41F9ECA6800F9EA1D /* AppDependencies.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDependencies.h; sourceTree = "<group>"; };
 		CE34FBE51F9ECA6800F9EA1D /* AppDependencies.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDependencies.m; sourceTree = "<group>"; };
 		CE34FBE71F9ECEB200F9EA1D /* ManagedProduct.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ManagedProduct.h; sourceTree = "<group>"; };
@@ -188,6 +190,7 @@
 		CE2A082B1F998A5C009B42FB /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				CE2C3D9B1FA0989800DD2E22 /* placeholder.png */,
 				CE2A08731F998DA9009B42FB /* Default-568h@2x.png */,
 				CE9D2E181F95D65200DC22AF /* Main.storyboard */,
 				CE9D2E1E1F95D65200DC22AF /* Assets.xcassets */,
@@ -760,6 +763,7 @@
 				CE9D2E221F95D65200DC22AF /* LaunchScreen.storyboard in Resources */,
 				CE9D2E1F1F95D65200DC22AF /* Assets.xcassets in Resources */,
 				CE2A08741F998DA9009B42FB /* Default-568h@2x.png in Resources */,
+				CE2C3D9C1FA0989900DD2E22 /* placeholder.png in Resources */,
 				CE9D2E1A1F95D65200DC22AF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,6 +8,7 @@
 
 #import "ProductListView.h"
 #import "ManagedProduct.h"
+#import <AFNetworking/UIImageView+AFNetworking.h>
 
 @interface ProductListView ()
 @property (nonatomic, strong) NSArray *products;
@@ -55,12 +56,20 @@
     static NSString *CellIdentifier = @"Cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:CellIdentifier];
     }
     
     ManagedProduct *product = self.products[indexPath.row];
+    __weak UITableViewCell *weakCell = cell;
     cell.textLabel.text = product.name;
-    
+    UIImage *placeholderImage = [UIImage imageNamed:@"placeholder.png"];
+//    UIImageView *imageview = [[UIImageView alloc] init];
+    [cell.imageView setImageWithURLRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:product.imageUrl]] placeholderImage:placeholderImage success:^(NSURLRequest * _Nonnull request, NSHTTPURLResponse * _Nullable response, UIImage * _Nonnull image) {
+        weakCell.imageView.image = image;
+    } failure:^(NSURLRequest * _Nonnull request, NSHTTPURLResponse * _Nullable response, NSError * _Nonnull error) {
+        ;
+    }];
+//    cell.imageView;
     return cell;
 }
 

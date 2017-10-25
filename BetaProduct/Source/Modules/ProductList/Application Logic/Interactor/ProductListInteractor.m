@@ -21,6 +21,13 @@
             }
         }];
     }];
+    
+//    [self.manager getProducts:^(BOOL isSuccessful, NSError *error, NSArray *entries) {
+//        if (isSuccessful) {
+//            [self.output gotProducts:entries];
+//        } else {
+//        }
+//    }];
 }
 
 @end

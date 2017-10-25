@@ -40,6 +40,7 @@
                 product.name = [converter stringWithKey:@"title"];
                 product.productDescription = [converter stringWithKey:@"body"];
                 product.priceDescription = [converter stringWithKey:@"body"];
+                product.imageUrl = [converter stringWithKey:@"thumbnailUrl"];
                 product.status = StatusActive;
                 product.syncStatus = SyncStatusSynced;
                 product.createdAt = [NSDate date];
