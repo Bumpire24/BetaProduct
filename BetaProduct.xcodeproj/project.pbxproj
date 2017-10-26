@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		CE2A083A1F998B54009B42FB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2A08381F998B54009B42FB /* main.m */; };
-		CE2A08501F998CF0009B42FB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2A084C1F998CEF009B42FB /* ViewController.m */; };
 		CE2A08511F998CF0009B42FB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2A084F1F998CF0009B42FB /* AppDelegate.m */; };
 		CE2A08541F998D08009B42FB /* BetaProject.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2A08531F998D08009B42FB /* BetaProject.m */; };
 		CE2A08591F998D0F009B42FB /* NSError+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2A08561F998D0F009B42FB /* NSError+Utility.m */; };
@@ -30,6 +29,7 @@
 		CE2C3D961FA07BE300DD2E22 /* ProductListWireFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2C3D951FA07BE300DD2E22 /* ProductListWireFrame.m */; };
 		CE2C3D991FA07C2900DD2E22 /* ProductListView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2C3D981FA07C2900DD2E22 /* ProductListView.m */; };
 		CE2C3D9C1FA0989900DD2E22 /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = CE2C3D9B1FA0989800DD2E22 /* placeholder.png */; };
+		CE2F7F1D1FA183790002EF63 /* ProductListDisplayItem.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2F7F1C1FA183790002EF63 /* ProductListDisplayItem.m */; };
 		CE34FBE61F9ECA6800F9EA1D /* AppDependencies.m in Sources */ = {isa = PBXBuildFile; fileRef = CE34FBE51F9ECA6800F9EA1D /* AppDependencies.m */; };
 		CE34FBE91F9ECEB200F9EA1D /* ManagedProduct.m in Sources */ = {isa = PBXBuildFile; fileRef = CE34FBE81F9ECEB200F9EA1D /* ManagedProduct.m */; };
 		CE34FBEC1F9ECF3800F9EA1D /* BaseEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = CE34FBEB1F9ECF3800F9EA1D /* BaseEntity.m */; };
@@ -67,8 +67,6 @@
 		594C0AE0F0B16584CC8243B4 /* Pods-BetaProduct.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BetaProduct.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BetaProduct/Pods-BetaProduct.debug.xcconfig"; sourceTree = "<group>"; };
 		CE2A08371F998B53009B42FB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE2A08381F998B54009B42FB /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		CE2A084C1F998CEF009B42FB /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		CE2A084D1F998CEF009B42FB /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		CE2A084E1F998CF0009B42FB /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CE2A084F1F998CF0009B42FB /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		CE2A08521F998D08009B42FB /* BetaProject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BetaProject.h; sourceTree = "<group>"; };
@@ -112,6 +110,8 @@
 		CE2C3D981FA07C2900DD2E22 /* ProductListView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProductListView.m; sourceTree = "<group>"; };
 		CE2C3D9A1FA07C4000DD2E22 /* ProductListViewProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductListViewProtocol.h; sourceTree = "<group>"; };
 		CE2C3D9B1FA0989800DD2E22 /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder.png; sourceTree = "<group>"; };
+		CE2F7F1B1FA183790002EF63 /* ProductListDisplayItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductListDisplayItem.h; sourceTree = "<group>"; };
+		CE2F7F1C1FA183790002EF63 /* ProductListDisplayItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProductListDisplayItem.m; sourceTree = "<group>"; };
 		CE34FBE41F9ECA6800F9EA1D /* AppDependencies.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDependencies.h; sourceTree = "<group>"; };
 		CE34FBE51F9ECA6800F9EA1D /* AppDependencies.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDependencies.m; sourceTree = "<group>"; };
 		CE34FBE71F9ECEB200F9EA1D /* ManagedProduct.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ManagedProduct.h; sourceTree = "<group>"; };
@@ -205,8 +205,6 @@
 				CE2C3D8E1FA0768E00DD2E22 /* VIew */,
 				CE2A084E1F998CF0009B42FB /* AppDelegate.h */,
 				CE2A084F1F998CF0009B42FB /* AppDelegate.m */,
-				CE2A084D1F998CEF009B42FB /* ViewController.h */,
-				CE2A084C1F998CEF009B42FB /* ViewController.m */,
 				CE2A083E1F998B7E009B42FB /* Infrastructure */,
 				CE2A083D1F998B77009B42FB /* Model */,
 				CE2A083C1F998B69009B42FB /* Database */,
@@ -455,6 +453,8 @@
 			children = (
 				CE2C3D8B1FA0665C00DD2E22 /* ProductListPresenter.h */,
 				CE2C3D8C1FA0665C00DD2E22 /* ProductListPresenter.m */,
+				CE2F7F1B1FA183790002EF63 /* ProductListDisplayItem.h */,
+				CE2F7F1C1FA183790002EF63 /* ProductListDisplayItem.m */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -856,11 +856,11 @@
 				CECD77451F9F1CB000ED5377 /* CompletionBlockTypes.m in Sources */,
 				CE2A08601F998D24009B42FB /* User.m in Sources */,
 				CE2C3D911FA076B400DD2E22 /* RootWireFrame.m in Sources */,
+				CE2F7F1D1FA183790002EF63 /* ProductListDisplayItem.m in Sources */,
 				CE2C3D861FA059AB00DD2E22 /* BaseManager.m in Sources */,
 				CE2A086B1F998D2C009B42FB /* StoreUserSession.m in Sources */,
 				CE34FBF41F9ED67100F9EA1D /* BaseManagedEntity.m in Sources */,
 				CE34FBF01F9ED33C00F9EA1D /* Product.m in Sources */,
-				CE2A08501F998CF0009B42FB /* ViewController.m in Sources */,
 				CE2C3D991FA07C2900DD2E22 /* ProductListView.m in Sources */,
 				CE2A086C1F998D2C009B42FB /* StoreCore.m in Sources */,
 				CE2A086D1F998D2C009B42FB /* StoreWebClient.m in Sources */,
@@ -949,6 +949,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_MISSING_PROPERTY_SYNTHESIS = NO;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
@@ -1001,6 +1002,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_MISSING_PROPERTY_SYNTHESIS = NO;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
@@ -1033,9 +1035,11 @@
 			baseConfigurationReference = 594C0AE0F0B16584CC8243B4 /* Pods-BetaProduct.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_OBJC_MISSING_PROPERTY_SYNTHESIS = NO;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "/Users/user/Desktop/Workspace/Migs/Xcode Projects/Beta Product/BetaProduct/BetaProduct/Support Files/BetaProduct.pch";
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				INFOPLIST_FILE = "BetaProduct/Support Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1054,6 +1058,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.outsourced.BetaProduct;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				WARNING_CFLAGS = "";
 			};
 			name = Debug;
 		};
@@ -1062,9 +1067,11 @@
 			baseConfigurationReference = F342EDDB72C782F81A2FFBB9 /* Pods-BetaProduct.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_OBJC_MISSING_PROPERTY_SYNTHESIS = NO;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "/Users/user/Desktop/Workspace/Migs/Xcode Projects/Beta Product/BetaProduct/BetaProduct/Support Files/BetaProduct.pch";
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				INFOPLIST_FILE = "BetaProduct/Support Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1083,6 +1090,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.outsourced.BetaProduct;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				WARNING_CFLAGS = "";
 			};
 			name = Release;
 		};

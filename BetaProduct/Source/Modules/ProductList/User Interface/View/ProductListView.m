@@ -7,7 +7,7 @@
 //
 
 #import "ProductListView.h"
-#import "ManagedProduct.h"
+#import "ProductListDisplayItem.h"
 #import <AFNetworking/UIImageView+AFNetworking.h>
 
 @interface ProductListView ()
@@ -15,6 +15,8 @@
 @end
 
 @implementation ProductListView
+
+static NSString *kProductListCell = @"productListCell";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -53,24 +55,25 @@
 }
 
 - (nonnull UITableViewCell *)tableView:(nonnull UITableView *)tableView cellForRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
-    static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
-    }
-    
-    ManagedProduct *product = self.products[indexPath.row];
-    __weak UITableViewCell *weakCell = cell;
-    cell.textLabel.text = product.name;
-    cell.detailTextLabel.text = product.imageUrl;
+    ProductListDisplayItem *item = self.products[indexPath.row];
     UIImage *placeholderImage = [UIImage imageNamed:@"placeholder.png"];
-//    UIImageView *imageview = [[UIImageView alloc] init];
-    [cell.imageView setImageWithURLRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:product.imageUrl]] placeholderImage:placeholderImage success:^(NSURLRequest * _Nonnull request, NSHTTPURLResponse * _Nullable response, UIImage * _Nonnull image) {
+    
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kProductListCell];
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:kProductListCell];
+    }
+    __weak UITableViewCell *weakCell = cell;
+    
+    cell.textLabel.text = item.productName;
+    cell.detailTextLabel.text = item.productDetail;
+    [cell.imageView setImageWithURLRequest:[NSURLRequest requestWithURL:item.productImageURL]
+                          placeholderImage:placeholderImage
+                                   success:^(NSURLRequest * _Nonnull request, NSHTTPURLResponse * _Nullable response, UIImage * _Nonnull image) {
         weakCell.imageView.image = image;
     } failure:^(NSURLRequest * _Nonnull request, NSHTTPURLResponse * _Nullable response, NSError * _Nonnull error) {
-        ;
+        
     }];
-//    cell.imageView;
     return cell;
 }
 

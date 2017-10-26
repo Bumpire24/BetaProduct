@@ -10,8 +10,6 @@
 #import "StoreWebClient.h"
 #import <AFNetworking/AFNetworkActivityIndicatorManager.h>
 #import "SyncEngine.h"
-#import <MBProgressHUD/MBProgressHUD.h>
-
 #import "StoreCore.h"
 #import "RootWireFrame.h"
 #import "ProductManager.h"
