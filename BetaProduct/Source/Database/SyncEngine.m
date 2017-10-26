@@ -47,7 +47,11 @@
                 dispatch_group_enter(downloadGroup);
                 [self.store saveWithCompletionBlock:^(bool isSuccesful, NSError *error) {
                     if (!isSuccesful) {
-                        DDLogError(@"Description : %@, Reason : %@, Suggestion : %@, Error : %@", error.localizedDescription, error.localizedFailureReason, error.localizedFailureReason, error);
+                        DDLogError(@"Description : %@, Reason : %@, Suggestion : %@, Error : %@",
+                                   error.localizedDescription,
+                                   error.localizedFailureReason,
+                                   error.localizedFailureReason,
+                                   error);
                     }
                     dispatch_group_leave(downloadGroup);
                 }];

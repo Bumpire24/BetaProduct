@@ -24,9 +24,9 @@ static NSString *kInitialSyncComplete = @"InitialSyncComplete";
 
 - (void) checkIfInitialSyncComplete {
     if ([self isInitialSyncComplete]) {
+        DDLogInfo(@"Already did Initial Sync. Skipping Initial Sync");
         [self retrieveProducts];
     } else {
-        DDLogInfo(@"Already did Initial Sync. Skipping Initial Sync");
         [self performInitialSync];
     }
 }

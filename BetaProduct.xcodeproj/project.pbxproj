@@ -44,6 +44,7 @@
 		CE9D2E381F95D65200DC22AF /* BetaProductUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9D2E371F95D65200DC22AF /* BetaProductUITests.m */; };
 		CECD77411F9F1C6D00ED5377 /* SyncEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = CECD77401F9F1C6D00ED5377 /* SyncEngine.m */; };
 		CECD77451F9F1CB000ED5377 /* CompletionBlockTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = CECD77441F9F1CB000ED5377 /* CompletionBlockTypes.m */; };
+		E6AB82A32DF6A94D85EE7780 /* Pods_BetaProductTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEE36F52A971965E54AD9888 /* Pods_BetaProductTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,7 +65,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2C9E019BF05E507A1D239064 /* Pods-BetaProductTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BetaProductTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BetaProductTests/Pods-BetaProductTests.debug.xcconfig"; sourceTree = "<group>"; };
 		594C0AE0F0B16584CC8243B4 /* Pods-BetaProduct.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BetaProduct.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BetaProduct/Pods-BetaProduct.debug.xcconfig"; sourceTree = "<group>"; };
+		913520B137C6901CDDC42C2C /* Pods-BetaProductTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BetaProductTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BetaProductTests/Pods-BetaProductTests.release.xcconfig"; sourceTree = "<group>"; };
 		CE2A08371F998B53009B42FB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE2A08381F998B54009B42FB /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CE2A084E1F998CF0009B42FB /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -141,6 +144,7 @@
 		CECD77431F9F1CB000ED5377 /* CompletionBlockTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CompletionBlockTypes.h; sourceTree = "<group>"; };
 		CECD77441F9F1CB000ED5377 /* CompletionBlockTypes.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CompletionBlockTypes.m; sourceTree = "<group>"; };
 		CECD77461F9F21C500ED5377 /* StoreWebClientProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StoreWebClientProtocol.h; sourceTree = "<group>"; };
+		EEE36F52A971965E54AD9888 /* Pods_BetaProductTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BetaProductTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F342EDDB72C782F81A2FFBB9 /* Pods-BetaProduct.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BetaProduct.release.xcconfig"; path = "Pods/Target Support Files/Pods-BetaProduct/Pods-BetaProduct.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -157,6 +161,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6AB82A32DF6A94D85EE7780 /* Pods_BetaProductTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,6 +180,8 @@
 			children = (
 				594C0AE0F0B16584CC8243B4 /* Pods-BetaProduct.debug.xcconfig */,
 				F342EDDB72C782F81A2FFBB9 /* Pods-BetaProduct.release.xcconfig */,
+				2C9E019BF05E507A1D239064 /* Pods-BetaProductTests.debug.xcconfig */,
+				913520B137C6901CDDC42C2C /* Pods-BetaProductTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -183,6 +190,7 @@
 			isa = PBXGroup;
 			children = (
 				CE9839011F9F3D8300B177F9 /* Pods_BetaProduct.framework */,
+				EEE36F52A971965E54AD9888 /* Pods_BetaProductTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -681,9 +689,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE9D2E3F1F95D65200DC22AF /* Build configuration list for PBXNativeTarget "BetaProductTests" */;
 			buildPhases = (
+				2FD02148C54A0F8A2BE989AA /* [CP] Check Pods Manifest.lock */,
 				CE9D2E241F95D65200DC22AF /* Sources */,
 				CE9D2E251F95D65200DC22AF /* Frameworks */,
 				CE9D2E261F95D65200DC22AF /* Resources */,
+				C112F19F7C38A27CF132D20C /* [CP] Embed Pods Frameworks */,
+				ED44F67C4C9B4553EDEDCED5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -785,6 +796,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		2FD02148C54A0F8A2BE989AA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BetaProductTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		38EBBFF63F41E3065205C965 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -838,6 +867,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BetaProduct/Pods-BetaProduct-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C112F19F7C38A27CF132D20C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BetaProductTests/Pods-BetaProductTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/OCMock/OCMock.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OCMock.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BetaProductTests/Pods-BetaProductTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED44F67C4C9B4553EDEDCED5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BetaProductTests/Pods-BetaProductTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1036,6 +1098,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_WARN_OBJC_MISSING_PROPERTY_SYNTHESIS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "/Users/user/Desktop/Workspace/Migs/Xcode Projects/Beta Product/BetaProduct/BetaProduct/Support Files/BetaProduct.pch";
@@ -1068,6 +1135,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_WARN_OBJC_MISSING_PROPERTY_SYNTHESIS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "/Users/user/Desktop/Workspace/Migs/Xcode Projects/Beta Product/BetaProduct/BetaProduct/Support Files/BetaProduct.pch";
@@ -1096,8 +1168,13 @@
 		};
 		CE9D2E401F95D65200DC22AF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C9E019BF05E507A1D239064 /* Pods-BetaProductTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = BetaProductTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.outsourced.BetaProductTests;
@@ -1108,8 +1185,13 @@
 		};
 		CE9D2E411F95D65200DC22AF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 913520B137C6901CDDC42C2C /* Pods-BetaProductTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = BetaProductTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.outsourced.BetaProductTests;
@@ -1121,6 +1203,10 @@
 		CE9D2E431F95D65200DC22AF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = BetaProductUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.outsourced.BetaProductUITests;
@@ -1133,6 +1219,10 @@
 		CE9D2E441F95D65200DC22AF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = BetaProductUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.outsourced.BetaProductUITests;

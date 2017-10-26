@@ -12,6 +12,11 @@
 
 - (void)gotProducts:(NSArray *)products {
     [self.view showProductList:products];
+//    if ([products count] == 0) {
+//        [self.view showNoContentMessage];
+//    } else {
+//        [self.view showProductList:products];
+//    }
 }
 
 - (void)updateView {

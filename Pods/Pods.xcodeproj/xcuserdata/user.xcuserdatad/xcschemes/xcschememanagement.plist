@@ -19,7 +19,17 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>OCMock.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-BetaProduct.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-BetaProductTests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
