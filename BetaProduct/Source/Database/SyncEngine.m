@@ -26,7 +26,11 @@
 - (void) startInitialSync : (CompletionBlock) block{
     [[StoreWebClient sharedManager] GET:BetaProject.WS_GET_ProductList withParameters:nil :^(bool isSuccesful, NSError *error, NSArray *results) {
         if (!isSuccesful) {
-            DDLogError(@"Description : %@, Reason : %@, Suggestion : %@, Error : %@", error.localizedDescription, error.localizedFailureReason, error.localizedFailureReason, error);
+            DDLogError(@"Description : %@, Reason : %@, Suggestion : %@, Error : %@",
+                       error.localizedDescription,
+                       error.localizedFailureReason,
+                       error.localizedFailureReason,
+                       error);
             block(isSuccesful, error);
         } else {
             __block NSError *GCDerror;

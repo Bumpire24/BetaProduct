@@ -34,7 +34,7 @@
 }
 
 - (void) configureApp {
-//    [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
+    
 }
 
 - (void) configureLibraries {

@@ -9,9 +9,11 @@
 #import "ProductListView.h"
 #import "ProductListDisplayItem.h"
 #import <AFNetworking/UIImageView+AFNetworking.h>
+#import <MBProgressHUD/MBProgressHUD.h>
 
 @interface ProductListView ()
 @property (nonatomic, strong) NSArray *products;
+@property (nonatomic, strong) MBProgressHUD *hud;
 @end
 
 @implementation ProductListView
@@ -29,6 +31,14 @@ static NSString *kProductListCell = @"productListCell";
     self.products = [[NSArray alloc] init];
     self.productTableView.delegate = self;
     self.productTableView.dataSource = self;
+    
+    [self showNoContentMessage];
+    
+    self.hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+    self.hud.mode = MBProgressHUDModeIndeterminate;
+    self.hud.backgroundView.style = MBProgressHUDBackgroundStyleBlur;
+    self.hud.animationType = MBProgressHUDAnimationFade;
+    self.hud.label.text = @"Loading";
 }
 
 - (void)didReceiveMemoryWarning {
@@ -45,6 +55,7 @@ static NSString *kProductListCell = @"productListCell";
 - (void)showNoContentMessage {
     NSLog(@"NO CONTENT");
     self.view = self.noContentView;
+    [self.hud hideAnimated:YES];
 }
 
 - (void)showProductList:(NSArray *)products {
@@ -52,6 +63,7 @@ static NSString *kProductListCell = @"productListCell";
     [self.productTableView reloadData];
     self.view = self.productTableView;
     NSLog(@"SHOW PRODS");
+    [self.hud hideAnimated:YES];
 }
 
 - (nonnull UITableViewCell *)tableView:(nonnull UITableView *)tableView cellForRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
