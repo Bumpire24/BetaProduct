@@ -41,8 +41,8 @@
                 WSConverter *converter = [[WSConverter alloc] initWithDictionary:dict];
                 product.productId = [converter numberWithKey:@"id"];
                 product.name = [converter stringWithKey:@"title"];
-                product.productDescription = [converter stringWithKey:@"body"];
-                product.priceDescription = [converter stringWithKey:@"body"];
+                product.productDescription = [converter stringWithKey:@"thumbnailUrl"];
+                product.priceDescription = [converter stringWithKey:@"thumbnailUrl"];
                 product.imageUrl = [converter stringWithKey:@"thumbnailUrl"];
                 product.status = StatusActive;
                 product.syncStatus = SyncStatusSynced;

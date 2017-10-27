@@ -7,34 +7,37 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "BaseView.h"
+#import "ProductListView.h"
+#import "ProductListDisplayItem.h"
 
 @interface BetaProductUITests : XCTestCase
-
+@property (nonatomic, strong) ProductListView *view;
 @end
 
 @implementation BetaProductUITests
 
 - (void)setUp {
     [super setUp];
-    
-    // Put setup code here. This method is called before the invocation of each test method in the class.
-    
-    // In UI tests it is usually best to stop immediately when a failure occurs.
+//    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
+//    self.view = [storyboard instantiateViewControllerWithIdentifier:@"ProductListView"];
     self.continueAfterFailure = NO;
-    // UI tests must launch the application that they test. Doing this in setup will make sure it happens for each test method.
     [[[XCUIApplication alloc] init] launch];
-    
-    // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
 }
 
 - (void)tearDown {
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
     [super tearDown];
 }
 
-- (void)testExample {
-    // Use recording to get started writing UI tests.
-    // Use XCTAssert and related functions to verify your tests produce the correct results.
-}
+//- (void)testShowingNoContentMessageShowsNoContentView {
+//    [self.view showNoContentMessage];
+//    XCTAssertEqualObjects(self.view.view, self.view.noContentView, @"the no content view should be the view");
+//}
+//
+//- (void)testShowingUpcomingItemsShowsTableView
+//{
+//    [self.view showProductList:nil];
+//    XCTAssertEqualObjects(self.view.view, self.view.productTableView, @"the table view should be the view");
+//}
 
 @end

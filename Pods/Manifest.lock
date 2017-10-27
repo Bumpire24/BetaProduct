@@ -21,20 +21,34 @@ PODS:
   - CocoaLumberjack/Extensions (3.3.0):
     - CocoaLumberjack/Default
   - MBProgressHUD (1.0.0)
+  - MMDrawerController (0.6.0):
+    - MMDrawerController/Core (= 0.6.0)
+    - MMDrawerController/MMDrawerBarButtonItem (= 0.6.0)
+    - MMDrawerController/MMDrawerVisualStates (= 0.6.0)
+    - MMDrawerController/Subclass (= 0.6.0)
+  - MMDrawerController/Core (0.6.0)
+  - MMDrawerController/MMDrawerBarButtonItem (0.6.0):
+    - MMDrawerController/Core
+  - MMDrawerController/MMDrawerVisualStates (0.6.0):
+    - MMDrawerController/Core
+  - MMDrawerController/Subclass (0.6.0):
+    - MMDrawerController/Core
   - OCMock (3.4)
 
 DEPENDENCIES:
   - AFNetworking
   - CocoaLumberjack
   - MBProgressHUD
+  - MMDrawerController
   - OCMock
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   CocoaLumberjack: 3c8c74683302f9012bb168e1c4b7ae3c0b558431
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
+  MMDrawerController: e3a54a5570388463ad3b36975251575b50c4e1a0
   OCMock: 35ae71d6a8fcc1b59434d561d1520b9dd4f15765
 
-PODFILE CHECKSUM: 01382817c4cde9c88c4c55db7895ad47507a7f02
+PODFILE CHECKSUM: 576e3ee09b080cfcee85852703814ee331b97cd6
 
 COCOAPODS: 1.3.1

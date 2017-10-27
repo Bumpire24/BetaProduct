@@ -6,17 +6,25 @@ def pods
 	pod 'AFNetworking'
     	pod 'CocoaLumberjack'
     	pod 'MBProgressHUD'
+	pod 'MMDrawerController'
 end
 
-def pods_test
+def podsTest 
 	pod 'OCMock'
 end
 
 target 'BetaProduct' do
 	pods
+	podsTest
 end
 
 target 'BetaProductTests' do
-	pods_test
+	pods
+	podsTest
+end
+
+target 'BetaProductUITests' do
+	pods
+	podsTest
 end
 

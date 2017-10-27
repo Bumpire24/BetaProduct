@@ -15,14 +15,10 @@
 
 @implementation AppDelegate
 
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
-    
     AppDependencies *dependencies = [[AppDependencies alloc] init];
     self.appDependencies = dependencies;
     [self.appDependencies installRootViewControllerInWindow:self.window];
-    
     return YES;
 }
 

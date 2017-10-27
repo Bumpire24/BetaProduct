@@ -11,7 +11,7 @@
 #import "ProductListView.h"
 #import "RootWireFrame.h"
 
-static NSString *ListViewControllerIdentifier = @"ProductListView";
+static NSString *ProductListViewIdentifier = @"ProductListView";
 
 @interface ProductListWireFrame()
 @property (nonatomic, strong) ProductListView *productListView;
@@ -24,24 +24,17 @@ static NSString *ListViewControllerIdentifier = @"ProductListView";
     productListView.eventHandler = self.listPresenter;
     self.listPresenter.view = productListView;
     self.productListView = productListView;
-    
     [self.rootWireframe showRootViewController:productListView inWindow:window];
 }
 
-- (ProductListView *)listViewControllerFromStoryboard
-{
+- (ProductListView *)listViewControllerFromStoryboard {
     UIStoryboard *storyboard = [self mainStoryboard];
-    ProductListView *viewController = [storyboard instantiateViewControllerWithIdentifier:ListViewControllerIdentifier];
-    
+    ProductListView *viewController = [storyboard instantiateViewControllerWithIdentifier:ProductListViewIdentifier];
     return viewController;
 }
 
-
-- (UIStoryboard *)mainStoryboard
-{
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main"
-                                                         bundle:[NSBundle mainBundle]];
-    
+- (UIStoryboard *)mainStoryboard {
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
     return storyboard;
 }
 

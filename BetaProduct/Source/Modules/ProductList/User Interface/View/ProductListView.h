@@ -9,8 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "ProductListViewProtocol.h"
 #import "ProductListModuleProtocol.h"
+#import "BaseView.h"
 
-@interface ProductListView : UIViewController <ProductListViewProtocol, UITableViewDelegate, UITableViewDataSource>
+@interface ProductListView : BaseView <ProductListViewProtocol, UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong) IBOutlet UIView* noContentView;
 @property (nonatomic, strong) IBOutlet UITableView* productTableView;
