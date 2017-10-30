@@ -10,7 +10,11 @@
 
 @implementation NSError (Utility)
 
-- (instancetype) initWithDomain:(NSErrorDomain)domain WithCode:(NSInteger)code WithDescription:(NSString *)description WithReason:(NSString *)reason WithSuggestion:(NSString *)suggestion {
+- (instancetype) initWithDomain:(NSErrorDomain)domain
+                       WithCode:(NSInteger)code
+                WithDescription:(NSString *)description
+                     WithReason:(NSString *)reason
+                 WithSuggestion:(NSString *)suggestion {
     NSDictionary *userinfo = @{
                               NSLocalizedDescriptionKey : description,
                               NSLocalizedFailureReasonErrorKey : reason,

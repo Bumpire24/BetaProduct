@@ -113,6 +113,9 @@
 		CE7E692C1FA6B507002B98BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE9D2E1E1F95D65200DC22AF /* Assets.xcassets */; };
 		CE7E692D1FA6B507002B98BF /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE2A08731F998DA9009B42FB /* Default-568h@2x.png */; };
 		CE7E692E1FA6B507002B98BF /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = CE2C3D9B1FA0989800DD2E22 /* placeholder.png */; };
+		CE7E69421FA70DB7002B98BF /* HomeView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7E69411FA70DB7002B98BF /* HomeView.m */; };
+		CE7E69431FA70DB7002B98BF /* HomeView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7E69411FA70DB7002B98BF /* HomeView.m */; };
+		CE7E69441FA70DB7002B98BF /* HomeView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7E69411FA70DB7002B98BF /* HomeView.m */; };
 		CE9839001F9F3D8300B177F9 /* Pods_BetaProduct.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9839011F9F3D8300B177F9 /* Pods_BetaProduct.framework */; };
 		CE9D2E1F1F95D65200DC22AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE9D2E1E1F95D65200DC22AF /* Assets.xcassets */; };
 		CE9D2E2D1F95D65200DC22AF /* BetaProductTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9D2E2C1F95D65200DC22AF /* BetaProductTests.m */; };
@@ -213,6 +216,8 @@
 		CE7E69041FA6B503002B98BF /* info-DEV.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "info-DEV.plist"; path = "/Users/user/Desktop/Workspace/Migs/Xcode Projects/Beta Product/BetaProduct/BetaProduct/Support Files/info-DEV.plist"; sourceTree = "<absolute>"; };
 		CE7E69341FA6B507002B98BF /* BetaProduct QA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BetaProduct QA.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE7E69351FA6B507002B98BF /* info-QA.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "info-QA.plist"; path = "/Users/user/Desktop/Workspace/Migs/Xcode Projects/Beta Product/BetaProduct/BetaProduct/Support Files/info-QA.plist"; sourceTree = "<absolute>"; };
+		CE7E69401FA70DB7002B98BF /* HomeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeView.h; sourceTree = "<group>"; };
+		CE7E69411FA70DB7002B98BF /* HomeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeView.m; sourceTree = "<group>"; };
 		CE9839011F9F3D8300B177F9 /* Pods_BetaProduct.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_BetaProduct.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE9839031F9F3FE800B177F9 /* BetaProduct.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BetaProduct.pch; sourceTree = "<group>"; };
 		CE9D2E0C1F95D65200DC22AF /* BetaProduct PROD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BetaProduct PROD.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -348,6 +353,7 @@
 		CE2A083B1F998B63009B42FB /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				CE7E69371FA70D4F002B98BF /* Home */,
 				CE2C3D821FA0554900DD2E22 /* Base */,
 				CE2C3D6A1FA0542600DD2E22 /* ProductList */,
 				CE34FBFC1F9EE00A00F9EA1D /* ProductDetail */,
@@ -721,6 +727,79 @@
 		CE34FC041F9EE00A00F9EA1D /* View */ = {
 			isa = PBXGroup;
 			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE7E69371FA70D4F002B98BF /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				CE7E69381FA70D4F002B98BF /* Module Interface */,
+				CE7E69391FA70D4F002B98BF /* Application Logic */,
+				CE7E693C1FA70D4F002B98BF /* User Interface */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		CE7E69381FA70D4F002B98BF /* Module Interface */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Module Interface";
+			sourceTree = "<group>";
+		};
+		CE7E69391FA70D4F002B98BF /* Application Logic */ = {
+			isa = PBXGroup;
+			children = (
+				CE7E693A1FA70D4F002B98BF /* Manager */,
+				CE7E693B1FA70D4F002B98BF /* Interactor */,
+			);
+			path = "Application Logic";
+			sourceTree = "<group>";
+		};
+		CE7E693A1FA70D4F002B98BF /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		CE7E693B1FA70D4F002B98BF /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		CE7E693C1FA70D4F002B98BF /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				CE7E693D1FA70D4F002B98BF /* Presenter */,
+				CE7E693E1FA70D4F002B98BF /* Wireframe */,
+				CE7E693F1FA70D4F002B98BF /* View */,
+			);
+			path = "User Interface";
+			sourceTree = "<group>";
+		};
+		CE7E693D1FA70D4F002B98BF /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		CE7E693E1FA70D4F002B98BF /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		CE7E693F1FA70D4F002B98BF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE7E69401FA70DB7002B98BF /* HomeView.h */,
+				CE7E69411FA70DB7002B98BF /* HomeView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1312,6 +1391,7 @@
 				CE7E68DC1FA6B503002B98BF /* AppDependencies.m in Sources */,
 				CE7E68DD1FA6B503002B98BF /* CompletionBlockTypes.m in Sources */,
 				CE7E68DE1FA6B503002B98BF /* User.m in Sources */,
+				CE7E69421FA70DB7002B98BF /* HomeView.m in Sources */,
 				CE7E68DF1FA6B503002B98BF /* RootWireFrame.m in Sources */,
 				CE7E68E01FA6B503002B98BF /* ProductListDisplayItem.m in Sources */,
 				CE7E68E11FA6B503002B98BF /* BaseManager.m in Sources */,
@@ -1349,6 +1429,7 @@
 				CE7E690D1FA6B507002B98BF /* AppDependencies.m in Sources */,
 				CE7E690E1FA6B507002B98BF /* CompletionBlockTypes.m in Sources */,
 				CE7E690F1FA6B507002B98BF /* User.m in Sources */,
+				CE7E69431FA70DB7002B98BF /* HomeView.m in Sources */,
 				CE7E69101FA6B507002B98BF /* RootWireFrame.m in Sources */,
 				CE7E69111FA6B507002B98BF /* ProductListDisplayItem.m in Sources */,
 				CE7E69121FA6B507002B98BF /* BaseManager.m in Sources */,
@@ -1386,6 +1467,7 @@
 				CE34FBE61F9ECA6800F9EA1D /* AppDependencies.m in Sources */,
 				CECD77451F9F1CB000ED5377 /* CompletionBlockTypes.m in Sources */,
 				CE2A08601F998D24009B42FB /* User.m in Sources */,
+				CE7E69441FA70DB7002B98BF /* HomeView.m in Sources */,
 				CE2C3D911FA076B400DD2E22 /* RootWireFrame.m in Sources */,
 				CE2F7F1D1FA183790002EF63 /* ProductListDisplayItem.m in Sources */,
 				CE2C3D861FA059AB00DD2E22 /* BaseManager.m in Sources */,

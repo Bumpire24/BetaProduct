@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Snp-8E-gGB">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="9DT-F9-bdY">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -14,6 +14,34 @@
         </array>
     </customFonts>
     <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="SD3-a7-hto">
+            <objects>
+                <tabBarController id="U9I-o1-CcJ" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="BDn-bq-XqH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pyn-tI-LiZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2135" y="140"/>
+        </scene>
+        <!--Home View-->
+        <scene sceneID="EDz-gr-5X9">
+            <objects>
+                <tabBarController id="9DT-F9-bdY" customClass="HomeView" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="TZm-pn-BA3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zsv-En-nGG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2412" y="-923"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="lnn-ya-xeE">
             <objects>
