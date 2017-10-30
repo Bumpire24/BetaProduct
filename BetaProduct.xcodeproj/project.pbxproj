@@ -38,14 +38,88 @@
 		CE34FBF41F9ED67100F9EA1D /* BaseManagedEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = CE34FBF31F9ED67100F9EA1D /* BaseManagedEntity.m */; };
 		CE34FBF91F9ED7A700F9EA1D /* DatabaseTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = CE34FBF81F9ED7A700F9EA1D /* DatabaseTypes.m */; };
 		CE4035E51FA2FA6F00FF6904 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE9D2E201F95D65200DC22AF /* LaunchScreen.storyboard */; };
-		CE4035E61FA2FABA00FF6904 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE2A08371F998B53009B42FB /* Info.plist */; };
+		CE4035E61FA2FABA00FF6904 /* info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE2A08371F998B53009B42FB /* info.plist */; };
+		CE7E68D71FA6B503002B98BF /* ProductListWireFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2C3D951FA07BE300DD2E22 /* ProductListWireFrame.m */; };
+		CE7E68D81FA6B503002B98BF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2A08381F998B54009B42FB /* main.m */; };
+		CE7E68D91FA6B503002B98BF /* ProductListInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2C3D891FA0623200DD2E22 /* ProductListInteractor.m */; };
+		CE7E68DA1FA6B503002B98BF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2A084F1F998CF0009B42FB /* AppDelegate.m */; };
+		CE7E68DB1FA6B503002B98BF /* SyncEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = CECD77401F9F1C6D00ED5377 /* SyncEngine.m */; };
+		CE7E68DC1FA6B503002B98BF /* AppDependencies.m in Sources */ = {isa = PBXBuildFile; fileRef = CE34FBE51F9ECA6800F9EA1D /* AppDependencies.m */; };
+		CE7E68DD1FA6B503002B98BF /* CompletionBlockTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = CECD77441F9F1CB000ED5377 /* CompletionBlockTypes.m */; };
+		CE7E68DE1FA6B503002B98BF /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2A085F1F998D24009B42FB /* User.m */; };
+		CE7E68DF1FA6B503002B98BF /* RootWireFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2C3D901FA076B400DD2E22 /* RootWireFrame.m */; };
+		CE7E68E01FA6B503002B98BF /* ProductListDisplayItem.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2F7F1C1FA183790002EF63 /* ProductListDisplayItem.m */; };
+		CE7E68E11FA6B503002B98BF /* BaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2C3D851FA059AB00DD2E22 /* BaseManager.m */; };
+		CE7E68E21FA6B503002B98BF /* StoreUserSession.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2A08651F998D2C009B42FB /* StoreUserSession.m */; };
+		CE7E68E31FA6B503002B98BF /* BaseManagedEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = CE34FBF31F9ED67100F9EA1D /* BaseManagedEntity.m */; };
+		CE7E68E41FA6B503002B98BF /* Product.m in Sources */ = {isa = PBXBuildFile; fileRef = CE34FBEF1F9ED33C00F9EA1D /* Product.m */; };
+		CE7E68E51FA6B503002B98BF /* ProductListView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2C3D981FA07C2900DD2E22 /* ProductListView.m */; };
+		CE7E68E61FA6B503002B98BF /* StoreCore.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2A08661F998D2C009B42FB /* StoreCore.m */; };
+		CE7E68E71FA6B503002B98BF /* StoreWebClient.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2A08681F998D2C009B42FB /* StoreWebClient.m */; };
+		CE7E68E81FA6B503002B98BF /* BaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFF850F1FA2BE6B008E6FE0 /* BaseView.m */; };
+		CE7E68E91FA6B503002B98BF /* ManagedProduct.m in Sources */ = {isa = PBXBuildFile; fileRef = CE34FBE81F9ECEB200F9EA1D /* ManagedProduct.m */; };
+		CE7E68EA1FA6B503002B98BF /* BetaProduct.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE2A08631F998D2B009B42FB /* BetaProduct.xcdatamodeld */; };
+		CE7E68EB1FA6B503002B98BF /* ProductListPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2C3D8C1FA0665C00DD2E22 /* ProductListPresenter.m */; };
+		CE7E68EC1FA6B503002B98BF /* RegisterDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2A086F1F998D38009B42FB /* RegisterDataManager.m */; };
+		CE7E68ED1FA6B503002B98BF /* DatabaseTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = CE34FBF81F9ED7A700F9EA1D /* DatabaseTypes.m */; };
+		CE7E68EE1FA6B503002B98BF /* NSArray+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2A08571F998D0F009B42FB /* NSArray+Utility.m */; };
+		CE7E68EF1FA6B503002B98BF /* ManagedUser.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2A085C1F998D1C009B42FB /* ManagedUser.m */; };
+		CE7E68F01FA6B503002B98BF /* ProductManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2C3D801FA054B600DD2E22 /* ProductManager.m */; };
+		CE7E68F11FA6B503002B98BF /* BetaProject.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2A08531F998D08009B42FB /* BetaProject.m */; };
+		CE7E68F21FA6B503002B98BF /* NSError+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2A08561F998D0F009B42FB /* NSError+Utility.m */; };
+		CE7E68F31FA6B503002B98BF /* WSConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2C3D531FA02A0800DD2E22 /* WSConverter.m */; };
+		CE7E68F41FA6B503002B98BF /* BaseEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = CE34FBEB1F9ECF3800F9EA1D /* BaseEntity.m */; };
+		CE7E68F61FA6B503002B98BF /* Pods_BetaProduct.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9839011F9F3D8300B177F9 /* Pods_BetaProduct.framework */; };
+		CE7E68F81FA6B503002B98BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEFD03BE1FA2FD29006CE0FF /* Main.storyboard */; };
+		CE7E68F91FA6B503002B98BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE9D2E201F95D65200DC22AF /* LaunchScreen.storyboard */; };
+		CE7E68FA1FA6B503002B98BF /* info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE2A08371F998B53009B42FB /* info.plist */; };
+		CE7E68FB1FA6B503002B98BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE9D2E1E1F95D65200DC22AF /* Assets.xcassets */; };
+		CE7E68FC1FA6B503002B98BF /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE2A08731F998DA9009B42FB /* Default-568h@2x.png */; };
+		CE7E68FD1FA6B503002B98BF /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = CE2C3D9B1FA0989800DD2E22 /* placeholder.png */; };
+		CE7E69081FA6B507002B98BF /* ProductListWireFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2C3D951FA07BE300DD2E22 /* ProductListWireFrame.m */; };
+		CE7E69091FA6B507002B98BF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2A08381F998B54009B42FB /* main.m */; };
+		CE7E690A1FA6B507002B98BF /* ProductListInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2C3D891FA0623200DD2E22 /* ProductListInteractor.m */; };
+		CE7E690B1FA6B507002B98BF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2A084F1F998CF0009B42FB /* AppDelegate.m */; };
+		CE7E690C1FA6B507002B98BF /* SyncEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = CECD77401F9F1C6D00ED5377 /* SyncEngine.m */; };
+		CE7E690D1FA6B507002B98BF /* AppDependencies.m in Sources */ = {isa = PBXBuildFile; fileRef = CE34FBE51F9ECA6800F9EA1D /* AppDependencies.m */; };
+		CE7E690E1FA6B507002B98BF /* CompletionBlockTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = CECD77441F9F1CB000ED5377 /* CompletionBlockTypes.m */; };
+		CE7E690F1FA6B507002B98BF /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2A085F1F998D24009B42FB /* User.m */; };
+		CE7E69101FA6B507002B98BF /* RootWireFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2C3D901FA076B400DD2E22 /* RootWireFrame.m */; };
+		CE7E69111FA6B507002B98BF /* ProductListDisplayItem.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2F7F1C1FA183790002EF63 /* ProductListDisplayItem.m */; };
+		CE7E69121FA6B507002B98BF /* BaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2C3D851FA059AB00DD2E22 /* BaseManager.m */; };
+		CE7E69131FA6B507002B98BF /* StoreUserSession.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2A08651F998D2C009B42FB /* StoreUserSession.m */; };
+		CE7E69141FA6B507002B98BF /* BaseManagedEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = CE34FBF31F9ED67100F9EA1D /* BaseManagedEntity.m */; };
+		CE7E69151FA6B507002B98BF /* Product.m in Sources */ = {isa = PBXBuildFile; fileRef = CE34FBEF1F9ED33C00F9EA1D /* Product.m */; };
+		CE7E69161FA6B507002B98BF /* ProductListView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2C3D981FA07C2900DD2E22 /* ProductListView.m */; };
+		CE7E69171FA6B507002B98BF /* StoreCore.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2A08661F998D2C009B42FB /* StoreCore.m */; };
+		CE7E69181FA6B507002B98BF /* StoreWebClient.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2A08681F998D2C009B42FB /* StoreWebClient.m */; };
+		CE7E69191FA6B507002B98BF /* BaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFF850F1FA2BE6B008E6FE0 /* BaseView.m */; };
+		CE7E691A1FA6B507002B98BF /* ManagedProduct.m in Sources */ = {isa = PBXBuildFile; fileRef = CE34FBE81F9ECEB200F9EA1D /* ManagedProduct.m */; };
+		CE7E691B1FA6B507002B98BF /* BetaProduct.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE2A08631F998D2B009B42FB /* BetaProduct.xcdatamodeld */; };
+		CE7E691C1FA6B507002B98BF /* ProductListPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2C3D8C1FA0665C00DD2E22 /* ProductListPresenter.m */; };
+		CE7E691D1FA6B507002B98BF /* RegisterDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2A086F1F998D38009B42FB /* RegisterDataManager.m */; };
+		CE7E691E1FA6B507002B98BF /* DatabaseTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = CE34FBF81F9ED7A700F9EA1D /* DatabaseTypes.m */; };
+		CE7E691F1FA6B507002B98BF /* NSArray+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2A08571F998D0F009B42FB /* NSArray+Utility.m */; };
+		CE7E69201FA6B507002B98BF /* ManagedUser.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2A085C1F998D1C009B42FB /* ManagedUser.m */; };
+		CE7E69211FA6B507002B98BF /* ProductManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2C3D801FA054B600DD2E22 /* ProductManager.m */; };
+		CE7E69221FA6B507002B98BF /* BetaProject.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2A08531F998D08009B42FB /* BetaProject.m */; };
+		CE7E69231FA6B507002B98BF /* NSError+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2A08561F998D0F009B42FB /* NSError+Utility.m */; };
+		CE7E69241FA6B507002B98BF /* WSConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2C3D531FA02A0800DD2E22 /* WSConverter.m */; };
+		CE7E69251FA6B507002B98BF /* BaseEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = CE34FBEB1F9ECF3800F9EA1D /* BaseEntity.m */; };
+		CE7E69271FA6B507002B98BF /* Pods_BetaProduct.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9839011F9F3D8300B177F9 /* Pods_BetaProduct.framework */; };
+		CE7E69291FA6B507002B98BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEFD03BE1FA2FD29006CE0FF /* Main.storyboard */; };
+		CE7E692A1FA6B507002B98BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE9D2E201F95D65200DC22AF /* LaunchScreen.storyboard */; };
+		CE7E692B1FA6B507002B98BF /* info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE2A08371F998B53009B42FB /* info.plist */; };
+		CE7E692C1FA6B507002B98BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE9D2E1E1F95D65200DC22AF /* Assets.xcassets */; };
+		CE7E692D1FA6B507002B98BF /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE2A08731F998DA9009B42FB /* Default-568h@2x.png */; };
+		CE7E692E1FA6B507002B98BF /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = CE2C3D9B1FA0989800DD2E22 /* placeholder.png */; };
 		CE9839001F9F3D8300B177F9 /* Pods_BetaProduct.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9839011F9F3D8300B177F9 /* Pods_BetaProduct.framework */; };
 		CE9D2E1F1F95D65200DC22AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE9D2E1E1F95D65200DC22AF /* Assets.xcassets */; };
 		CE9D2E2D1F95D65200DC22AF /* BetaProductTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9D2E2C1F95D65200DC22AF /* BetaProductTests.m */; };
 		CECD77411F9F1C6D00ED5377 /* SyncEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = CECD77401F9F1C6D00ED5377 /* SyncEngine.m */; };
 		CECD77451F9F1CB000ED5377 /* CompletionBlockTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = CECD77441F9F1CB000ED5377 /* CompletionBlockTypes.m */; };
 		CEFD03BB1FA2FB84006CE0FF /* BetaProductUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9D2E371F95D65200DC22AF /* BetaProductUITests.m */; };
-		CEFD03BD1FA2FC1C006CE0FF /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE2A08371F998B53009B42FB /* Info.plist */; };
+		CEFD03BD1FA2FC1C006CE0FF /* info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE2A08371F998B53009B42FB /* info.plist */; };
 		CEFD03C01FA2FD29006CE0FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEFD03BE1FA2FD29006CE0FF /* Main.storyboard */; };
 		CEFD03C21FA2FEE4006CE0FF /* BetaProductView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFD03C11FA2FEE4006CE0FF /* BetaProductView.m */; };
 		CEFF85101FA2BE6B008E6FE0 /* BaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFF850F1FA2BE6B008E6FE0 /* BaseView.m */; };
@@ -76,7 +150,7 @@
 		594C0AE0F0B16584CC8243B4 /* Pods-BetaProduct.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BetaProduct.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BetaProduct/Pods-BetaProduct.debug.xcconfig"; sourceTree = "<group>"; };
 		8B3561BDF068C751B873DE0B /* Pods-BetaProductUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BetaProductUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BetaProductUITests/Pods-BetaProductUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		913520B137C6901CDDC42C2C /* Pods-BetaProductTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BetaProductTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BetaProductTests/Pods-BetaProductTests.release.xcconfig"; sourceTree = "<group>"; };
-		CE2A08371F998B53009B42FB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE2A08371F998B53009B42FB /* info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = info.plist; sourceTree = "<group>"; };
 		CE2A08381F998B54009B42FB /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CE2A084E1F998CF0009B42FB /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CE2A084F1F998CF0009B42FB /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -135,9 +209,13 @@
 		CE34FBF31F9ED67100F9EA1D /* BaseManagedEntity.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseManagedEntity.m; sourceTree = "<group>"; };
 		CE34FBF71F9ED7A700F9EA1D /* DatabaseTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DatabaseTypes.h; sourceTree = "<group>"; };
 		CE34FBF81F9ED7A700F9EA1D /* DatabaseTypes.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DatabaseTypes.m; sourceTree = "<group>"; };
+		CE7E69031FA6B503002B98BF /* BetaProduct DEV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BetaProduct DEV.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE7E69041FA6B503002B98BF /* info-DEV.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "info-DEV.plist"; path = "/Users/user/Desktop/Workspace/Migs/Xcode Projects/Beta Product/BetaProduct/BetaProduct/Support Files/info-DEV.plist"; sourceTree = "<absolute>"; };
+		CE7E69341FA6B507002B98BF /* BetaProduct QA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BetaProduct QA.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE7E69351FA6B507002B98BF /* info-QA.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "info-QA.plist"; path = "/Users/user/Desktop/Workspace/Migs/Xcode Projects/Beta Product/BetaProduct/BetaProduct/Support Files/info-QA.plist"; sourceTree = "<absolute>"; };
 		CE9839011F9F3D8300B177F9 /* Pods_BetaProduct.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_BetaProduct.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE9839031F9F3FE800B177F9 /* BetaProduct.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BetaProduct.pch; sourceTree = "<group>"; };
-		CE9D2E0C1F95D65200DC22AF /* BetaProduct.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BetaProduct.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE9D2E0C1F95D65200DC22AF /* BetaProduct PROD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BetaProduct PROD.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE9D2E1E1F95D65200DC22AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE9D2E211F95D65200DC22AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE9D2E281F95D65200DC22AF /* BetaProductTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BetaProductTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -161,6 +239,22 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		CE7E68F51FA6B503002B98BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE7E68F61FA6B503002B98BF /* Pods_BetaProduct.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE7E69261FA6B507002B98BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE7E69271FA6B507002B98BF /* Pods_BetaProduct.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CE9D2E091F95D65200DC22AF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -242,7 +336,9 @@
 		CE2A08321F998B0E009B42FB /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				CE2A08371F998B53009B42FB /* Info.plist */,
+				CE7E69041FA6B503002B98BF /* info-DEV.plist */,
+				CE7E69351FA6B507002B98BF /* info-QA.plist */,
+				CE2A08371F998B53009B42FB /* info.plist */,
 				CE2A08381F998B54009B42FB /* main.m */,
 				CE9839031F9F3FE800B177F9 /* BetaProduct.pch */,
 			);
@@ -644,9 +740,11 @@
 		CE9D2E0D1F95D65200DC22AF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CE9D2E0C1F95D65200DC22AF /* BetaProduct.app */,
+				CE9D2E0C1F95D65200DC22AF /* BetaProduct PROD.app */,
 				CE9D2E281F95D65200DC22AF /* BetaProductTests.xctest */,
 				CE9D2E331F95D65200DC22AF /* BetaProductUITests.xctest */,
+				CE7E69031FA6B503002B98BF /* BetaProduct DEV.app */,
+				CE7E69341FA6B507002B98BF /* BetaProduct QA.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -700,9 +798,49 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CE9D2E0B1F95D65200DC22AF /* BetaProduct */ = {
+		CE7E68D41FA6B503002B98BF /* BetaProduct DEV */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CE9D2E3C1F95D65200DC22AF /* Build configuration list for PBXNativeTarget "BetaProduct" */;
+			buildConfigurationList = CE7E69001FA6B503002B98BF /* Build configuration list for PBXNativeTarget "BetaProduct DEV" */;
+			buildPhases = (
+				CE7E68D51FA6B503002B98BF /* [CP] Check Pods Manifest.lock */,
+				CE7E68D61FA6B503002B98BF /* Sources */,
+				CE7E68F51FA6B503002B98BF /* Frameworks */,
+				CE7E68F71FA6B503002B98BF /* Resources */,
+				CE7E68FE1FA6B503002B98BF /* [CP] Embed Pods Frameworks */,
+				CE7E68FF1FA6B503002B98BF /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BetaProduct DEV";
+			productName = BetaProduct;
+			productReference = CE7E69031FA6B503002B98BF /* BetaProduct DEV.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CE7E69051FA6B507002B98BF /* BetaProduct QA */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE7E69311FA6B507002B98BF /* Build configuration list for PBXNativeTarget "BetaProduct QA" */;
+			buildPhases = (
+				CE7E69061FA6B507002B98BF /* [CP] Check Pods Manifest.lock */,
+				CE7E69071FA6B507002B98BF /* Sources */,
+				CE7E69261FA6B507002B98BF /* Frameworks */,
+				CE7E69281FA6B507002B98BF /* Resources */,
+				CE7E692F1FA6B507002B98BF /* [CP] Embed Pods Frameworks */,
+				CE7E69301FA6B507002B98BF /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BetaProduct QA";
+			productName = BetaProduct;
+			productReference = CE7E69341FA6B507002B98BF /* BetaProduct QA.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CE9D2E0B1F95D65200DC22AF /* BetaProduct PROD */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE9D2E3C1F95D65200DC22AF /* Build configuration list for PBXNativeTarget "BetaProduct PROD" */;
 			buildPhases = (
 				38EBBFF63F41E3065205C965 /* [CP] Check Pods Manifest.lock */,
 				CE9D2E081F95D65200DC22AF /* Sources */,
@@ -715,9 +853,9 @@
 			);
 			dependencies = (
 			);
-			name = BetaProduct;
+			name = "BetaProduct PROD";
 			productName = BetaProduct;
-			productReference = CE9D2E0C1F95D65200DC22AF /* BetaProduct.app */;
+			productReference = CE9D2E0C1F95D65200DC22AF /* BetaProduct PROD.app */;
 			productType = "com.apple.product-type.application";
 		};
 		CE9D2E271F95D65200DC22AF /* BetaProductTests */ = {
@@ -797,7 +935,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CE9D2E0B1F95D65200DC22AF /* BetaProduct */,
+				CE7E68D41FA6B503002B98BF /* BetaProduct DEV */,
+				CE7E69051FA6B507002B98BF /* BetaProduct QA */,
+				CE9D2E0B1F95D65200DC22AF /* BetaProduct PROD */,
 				CE9D2E271F95D65200DC22AF /* BetaProductTests */,
 				CE9D2E321F95D65200DC22AF /* BetaProductUITests */,
 			);
@@ -805,13 +945,39 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		CE7E68F71FA6B503002B98BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE7E68F81FA6B503002B98BF /* Main.storyboard in Resources */,
+				CE7E68F91FA6B503002B98BF /* LaunchScreen.storyboard in Resources */,
+				CE7E68FA1FA6B503002B98BF /* info.plist in Resources */,
+				CE7E68FB1FA6B503002B98BF /* Assets.xcassets in Resources */,
+				CE7E68FC1FA6B503002B98BF /* Default-568h@2x.png in Resources */,
+				CE7E68FD1FA6B503002B98BF /* placeholder.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE7E69281FA6B507002B98BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE7E69291FA6B507002B98BF /* Main.storyboard in Resources */,
+				CE7E692A1FA6B507002B98BF /* LaunchScreen.storyboard in Resources */,
+				CE7E692B1FA6B507002B98BF /* info.plist in Resources */,
+				CE7E692C1FA6B507002B98BF /* Assets.xcassets in Resources */,
+				CE7E692D1FA6B507002B98BF /* Default-568h@2x.png in Resources */,
+				CE7E692E1FA6B507002B98BF /* placeholder.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CE9D2E0A1F95D65200DC22AF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				CEFD03C01FA2FD29006CE0FF /* Main.storyboard in Resources */,
 				CE4035E51FA2FA6F00FF6904 /* LaunchScreen.storyboard in Resources */,
-				CE4035E61FA2FABA00FF6904 /* Info.plist in Resources */,
+				CE4035E61FA2FABA00FF6904 /* info.plist in Resources */,
 				CE9D2E1F1F95D65200DC22AF /* Assets.xcassets in Resources */,
 				CE2A08741F998DA9009B42FB /* Default-568h@2x.png in Resources */,
 				CE2C3D9C1FA0989900DD2E22 /* placeholder.png in Resources */,
@@ -829,7 +995,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEFD03BD1FA2FC1C006CE0FF /* Info.plist in Resources */,
+				CEFD03BD1FA2FC1C006CE0FF /* info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -998,6 +1164,124 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BetaProductTests/Pods-BetaProductTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		CE7E68D51FA6B503002B98BF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BetaProduct-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE7E68FE1FA6B503002B98BF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BetaProduct/Pods-BetaProduct-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/MMDrawerController/MMDrawerController.framework",
+				"${BUILT_PRODUCTS_DIR}/OCMock/OCMock.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaLumberjack.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MMDrawerController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OCMock.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BetaProduct/Pods-BetaProduct-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE7E68FF1FA6B503002B98BF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BetaProduct/Pods-BetaProduct-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE7E69061FA6B507002B98BF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BetaProduct-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE7E692F1FA6B507002B98BF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BetaProduct/Pods-BetaProduct-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/MMDrawerController/MMDrawerController.framework",
+				"${BUILT_PRODUCTS_DIR}/OCMock/OCMock.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaLumberjack.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MMDrawerController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OCMock.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BetaProduct/Pods-BetaProduct-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE7E69301FA6B507002B98BF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BetaProduct/Pods-BetaProduct-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		ED44F67C4C9B4553EDEDCED5 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1016,6 +1300,80 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		CE7E68D61FA6B503002B98BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE7E68D71FA6B503002B98BF /* ProductListWireFrame.m in Sources */,
+				CE7E68D81FA6B503002B98BF /* main.m in Sources */,
+				CE7E68D91FA6B503002B98BF /* ProductListInteractor.m in Sources */,
+				CE7E68DA1FA6B503002B98BF /* AppDelegate.m in Sources */,
+				CE7E68DB1FA6B503002B98BF /* SyncEngine.m in Sources */,
+				CE7E68DC1FA6B503002B98BF /* AppDependencies.m in Sources */,
+				CE7E68DD1FA6B503002B98BF /* CompletionBlockTypes.m in Sources */,
+				CE7E68DE1FA6B503002B98BF /* User.m in Sources */,
+				CE7E68DF1FA6B503002B98BF /* RootWireFrame.m in Sources */,
+				CE7E68E01FA6B503002B98BF /* ProductListDisplayItem.m in Sources */,
+				CE7E68E11FA6B503002B98BF /* BaseManager.m in Sources */,
+				CE7E68E21FA6B503002B98BF /* StoreUserSession.m in Sources */,
+				CE7E68E31FA6B503002B98BF /* BaseManagedEntity.m in Sources */,
+				CE7E68E41FA6B503002B98BF /* Product.m in Sources */,
+				CE7E68E51FA6B503002B98BF /* ProductListView.m in Sources */,
+				CE7E68E61FA6B503002B98BF /* StoreCore.m in Sources */,
+				CE7E68E71FA6B503002B98BF /* StoreWebClient.m in Sources */,
+				CE7E68E81FA6B503002B98BF /* BaseView.m in Sources */,
+				CE7E68E91FA6B503002B98BF /* ManagedProduct.m in Sources */,
+				CE7E68EA1FA6B503002B98BF /* BetaProduct.xcdatamodeld in Sources */,
+				CE7E68EB1FA6B503002B98BF /* ProductListPresenter.m in Sources */,
+				CE7E68EC1FA6B503002B98BF /* RegisterDataManager.m in Sources */,
+				CE7E68ED1FA6B503002B98BF /* DatabaseTypes.m in Sources */,
+				CE7E68EE1FA6B503002B98BF /* NSArray+Utility.m in Sources */,
+				CE7E68EF1FA6B503002B98BF /* ManagedUser.m in Sources */,
+				CE7E68F01FA6B503002B98BF /* ProductManager.m in Sources */,
+				CE7E68F11FA6B503002B98BF /* BetaProject.m in Sources */,
+				CE7E68F21FA6B503002B98BF /* NSError+Utility.m in Sources */,
+				CE7E68F31FA6B503002B98BF /* WSConverter.m in Sources */,
+				CE7E68F41FA6B503002B98BF /* BaseEntity.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE7E69071FA6B507002B98BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE7E69081FA6B507002B98BF /* ProductListWireFrame.m in Sources */,
+				CE7E69091FA6B507002B98BF /* main.m in Sources */,
+				CE7E690A1FA6B507002B98BF /* ProductListInteractor.m in Sources */,
+				CE7E690B1FA6B507002B98BF /* AppDelegate.m in Sources */,
+				CE7E690C1FA6B507002B98BF /* SyncEngine.m in Sources */,
+				CE7E690D1FA6B507002B98BF /* AppDependencies.m in Sources */,
+				CE7E690E1FA6B507002B98BF /* CompletionBlockTypes.m in Sources */,
+				CE7E690F1FA6B507002B98BF /* User.m in Sources */,
+				CE7E69101FA6B507002B98BF /* RootWireFrame.m in Sources */,
+				CE7E69111FA6B507002B98BF /* ProductListDisplayItem.m in Sources */,
+				CE7E69121FA6B507002B98BF /* BaseManager.m in Sources */,
+				CE7E69131FA6B507002B98BF /* StoreUserSession.m in Sources */,
+				CE7E69141FA6B507002B98BF /* BaseManagedEntity.m in Sources */,
+				CE7E69151FA6B507002B98BF /* Product.m in Sources */,
+				CE7E69161FA6B507002B98BF /* ProductListView.m in Sources */,
+				CE7E69171FA6B507002B98BF /* StoreCore.m in Sources */,
+				CE7E69181FA6B507002B98BF /* StoreWebClient.m in Sources */,
+				CE7E69191FA6B507002B98BF /* BaseView.m in Sources */,
+				CE7E691A1FA6B507002B98BF /* ManagedProduct.m in Sources */,
+				CE7E691B1FA6B507002B98BF /* BetaProduct.xcdatamodeld in Sources */,
+				CE7E691C1FA6B507002B98BF /* ProductListPresenter.m in Sources */,
+				CE7E691D1FA6B507002B98BF /* RegisterDataManager.m in Sources */,
+				CE7E691E1FA6B507002B98BF /* DatabaseTypes.m in Sources */,
+				CE7E691F1FA6B507002B98BF /* NSArray+Utility.m in Sources */,
+				CE7E69201FA6B507002B98BF /* ManagedUser.m in Sources */,
+				CE7E69211FA6B507002B98BF /* ProductManager.m in Sources */,
+				CE7E69221FA6B507002B98BF /* BetaProject.m in Sources */,
+				CE7E69231FA6B507002B98BF /* NSError+Utility.m in Sources */,
+				CE7E69241FA6B507002B98BF /* WSConverter.m in Sources */,
+				CE7E69251FA6B507002B98BF /* BaseEntity.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CE9D2E081F95D65200DC22AF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1076,12 +1434,12 @@
 /* Begin PBXTargetDependency section */
 		CE9D2E2A1F95D65200DC22AF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = CE9D2E0B1F95D65200DC22AF /* BetaProduct */;
+			target = CE9D2E0B1F95D65200DC22AF /* BetaProduct PROD */;
 			targetProxy = CE9D2E291F95D65200DC22AF /* PBXContainerItemProxy */;
 		};
 		CE9D2E351F95D65200DC22AF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = CE9D2E0B1F95D65200DC22AF /* BetaProduct */;
+			target = CE9D2E0B1F95D65200DC22AF /* BetaProduct PROD */;
 			targetProxy = CE9D2E341F95D65200DC22AF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -1106,6 +1464,174 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		CE7E69011FA6B503002B98BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 594C0AE0F0B16584CC8243B4 /* Pods-BetaProduct.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_OBJC_MISSING_PROPERTY_SYNTHESIS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "/Users/user/Desktop/Workspace/Migs/Xcode Projects/Beta Product/BetaProduct/BetaProduct/Support Files/BetaProduct.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					"DEV=1",
+				);
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
+				INFOPLIST_FILE = "$(SRCROOT)/BetaProduct/Support Files/info-DEV.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.outsourced.BetaProduct.DEV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WARNING_CFLAGS = "";
+			};
+			name = Debug;
+		};
+		CE7E69021FA6B503002B98BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F342EDDB72C782F81A2FFBB9 /* Pods-BetaProduct.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_OBJC_MISSING_PROPERTY_SYNTHESIS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "/Users/user/Desktop/Workspace/Migs/Xcode Projects/Beta Product/BetaProduct/BetaProduct/Support Files/BetaProduct.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					"DEV=1",
+				);
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
+				INFOPLIST_FILE = "$(SRCROOT)/BetaProduct/Support Files/info-DEV.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.outsourced.BetaProduct.DEV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WARNING_CFLAGS = "";
+			};
+			name = Release;
+		};
+		CE7E69321FA6B507002B98BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 594C0AE0F0B16584CC8243B4 /* Pods-BetaProduct.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_OBJC_MISSING_PROPERTY_SYNTHESIS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "/Users/user/Desktop/Workspace/Migs/Xcode Projects/Beta Product/BetaProduct/BetaProduct/Support Files/BetaProduct.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					"QA=1",
+				);
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
+				INFOPLIST_FILE = "$(SRCROOT)/BetaProduct/Support Files/info-QA.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.outsourced.BetaProduct.QA;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WARNING_CFLAGS = "";
+			};
+			name = Debug;
+		};
+		CE7E69331FA6B507002B98BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F342EDDB72C782F81A2FFBB9 /* Pods-BetaProduct.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_OBJC_MISSING_PROPERTY_SYNTHESIS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "/Users/user/Desktop/Workspace/Migs/Xcode Projects/Beta Product/BetaProduct/BetaProduct/Support Files/BetaProduct.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					"QA=1",
+				);
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
+				INFOPLIST_FILE = "$(SRCROOT)/BetaProduct/Support Files/info-QA.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.outsourced.BetaProduct.QA;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WARNING_CFLAGS = "";
+			};
+			name = Release;
+		};
 		CE9D2E3A1F95D65200DC22AF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1220,6 +1746,11 @@
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "/Users/user/Desktop/Workspace/Migs/Xcode Projects/Beta Product/BetaProduct/BetaProduct/Support Files/BetaProduct.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					"PROD=1",
+				);
 				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
 				INFOPLIST_FILE = "BetaProduct/Support Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -1257,6 +1788,11 @@
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "/Users/user/Desktop/Workspace/Migs/Xcode Projects/Beta Product/BetaProduct/BetaProduct/Support Files/BetaProduct.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					"PROD=1",
+				);
 				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
 				INFOPLIST_FILE = "BetaProduct/Support Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -1351,6 +1887,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		CE7E69001FA6B503002B98BF /* Build configuration list for PBXNativeTarget "BetaProduct DEV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE7E69011FA6B503002B98BF /* Debug */,
+				CE7E69021FA6B503002B98BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE7E69311FA6B507002B98BF /* Build configuration list for PBXNativeTarget "BetaProduct QA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE7E69321FA6B507002B98BF /* Debug */,
+				CE7E69331FA6B507002B98BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		CE9D2E071F95D65200DC22AF /* Build configuration list for PBXProject "BetaProduct" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1360,7 +1914,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CE9D2E3C1F95D65200DC22AF /* Build configuration list for PBXNativeTarget "BetaProduct" */ = {
+		CE9D2E3C1F95D65200DC22AF /* Build configuration list for PBXNativeTarget "BetaProduct PROD" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CE9D2E3D1F95D65200DC22AF /* Debug */,

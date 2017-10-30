@@ -47,11 +47,20 @@
     
     [DDLog addLogger:fileLogger];
     
+    DDLogInfo(@"Test Logs");
     DDLogVerbose(@"Verbose");
     DDLogDebug(@"Debug");
     DDLogInfo(@"Info");
     DDLogWarn(@"Warn");
     DDLogError(@"Error");
+    
+    #ifdef DEV
+        DDLogInfo(@"Development Environment");
+    #elif QA
+        DDLogInfo(@"QA Environment");
+    #elif PROD
+        DDLogInfo(@"QA Environment");
+    #endif
     
     [AFNetworkActivityIndicatorManager sharedManager].enabled = YES;
     [AFNetworkActivityIndicatorManager sharedManager].activationDelay = 0;

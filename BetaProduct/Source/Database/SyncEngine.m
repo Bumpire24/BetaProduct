@@ -23,6 +23,7 @@
 #pragma mark - Private
 
 #pragma mark - Public
+
 - (void) startInitialSync : (CompletionBlock) block{
     [[StoreWebClient sharedManager] GET:BetaProject.WS_GET_ProductList withParameters:nil :^(bool isSuccesful, NSError *error, NSArray *results) {
         if (!isSuccesful) {
