@@ -16,9 +16,9 @@
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-//    AppDependencies *dependencies = [[AppDependencies alloc] init];
-//    self.appDependencies = dependencies;
-//    [self.appDependencies installRootViewControllerInWindow:self.window];
+    AppDependencies *dependencies = [[AppDependencies alloc] init];
+    self.appDependencies = dependencies;
+    [self.appDependencies installRootViewControllerInWindow:self.window];
     return YES;
 }
 

@@ -14,5 +14,7 @@
 
 - (void) save;
 - (void) saveWithCompletionBlock : (CompletionBlock) completionBlock;
+- (void) saveOrRollback;
+- (void) saveOrRollback : (CompletionBlock) completionBlock;
 
 @end

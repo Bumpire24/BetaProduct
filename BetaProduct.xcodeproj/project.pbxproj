@@ -119,6 +119,15 @@
 		CE9839001F9F3D8300B177F9 /* Pods_BetaProduct.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9839011F9F3D8300B177F9 /* Pods_BetaProduct.framework */; };
 		CE9D2E1F1F95D65200DC22AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE9D2E1E1F95D65200DC22AF /* Assets.xcassets */; };
 		CE9D2E2D1F95D65200DC22AF /* BetaProductTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9D2E2C1F95D65200DC22AF /* BetaProductTests.m */; };
+		CECC516B1FAAE59100A4C7F4 /* HomeWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = CECC516A1FAAE59100A4C7F4 /* HomeWireframe.m */; };
+		CECC516C1FAAE59100A4C7F4 /* HomeWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = CECC516A1FAAE59100A4C7F4 /* HomeWireframe.m */; };
+		CECC516D1FAAE59100A4C7F4 /* HomeWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = CECC516A1FAAE59100A4C7F4 /* HomeWireframe.m */; };
+		CECC51701FAAE5B800A4C7F4 /* HomePresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = CECC516F1FAAE5B800A4C7F4 /* HomePresenter.m */; };
+		CECC51711FAAE5B800A4C7F4 /* HomePresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = CECC516F1FAAE5B800A4C7F4 /* HomePresenter.m */; };
+		CECC51721FAAE5B800A4C7F4 /* HomePresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = CECC516F1FAAE5B800A4C7F4 /* HomePresenter.m */; };
+		CECC51781FAAEA6800A4C7F4 /* BaseWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = CECC51771FAAEA6800A4C7F4 /* BaseWireframe.m */; };
+		CECC51791FAAEA6800A4C7F4 /* BaseWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = CECC51771FAAEA6800A4C7F4 /* BaseWireframe.m */; };
+		CECC517A1FAAEA6800A4C7F4 /* BaseWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = CECC51771FAAEA6800A4C7F4 /* BaseWireframe.m */; };
 		CECD77411F9F1C6D00ED5377 /* SyncEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = CECD77401F9F1C6D00ED5377 /* SyncEngine.m */; };
 		CECD77451F9F1CB000ED5377 /* CompletionBlockTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = CECD77441F9F1CB000ED5377 /* CompletionBlockTypes.m */; };
 		CEFD03BB1FA2FB84006CE0FF /* BetaProductUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9D2E371F95D65200DC22AF /* BetaProductUITests.m */; };
@@ -229,6 +238,14 @@
 		CE9D2E331F95D65200DC22AF /* BetaProductUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BetaProductUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE9D2E371F95D65200DC22AF /* BetaProductUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BetaProductUITests.m; sourceTree = "<group>"; };
 		CE9D2E391F95D65200DC22AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CECC51691FAAE59100A4C7F4 /* HomeWireframe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeWireframe.h; sourceTree = "<group>"; };
+		CECC516A1FAAE59100A4C7F4 /* HomeWireframe.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeWireframe.m; sourceTree = "<group>"; };
+		CECC516E1FAAE5B800A4C7F4 /* HomePresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomePresenter.h; sourceTree = "<group>"; };
+		CECC516F1FAAE5B800A4C7F4 /* HomePresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomePresenter.m; sourceTree = "<group>"; };
+		CECC51731FAAE5DE00A4C7F4 /* HomeViewProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewProtocol.h; sourceTree = "<group>"; };
+		CECC51741FAAE8FA00A4C7F4 /* HomeModuleProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeModuleProtocol.h; sourceTree = "<group>"; };
+		CECC51761FAAEA6800A4C7F4 /* BaseWireframe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseWireframe.h; sourceTree = "<group>"; };
+		CECC51771FAAEA6800A4C7F4 /* BaseWireframe.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseWireframe.m; sourceTree = "<group>"; };
 		CECD773F1F9F1C6D00ED5377 /* SyncEngine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SyncEngine.h; sourceTree = "<group>"; };
 		CECD77401F9F1C6D00ED5377 /* SyncEngine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SyncEngine.m; sourceTree = "<group>"; };
 		CECD77431F9F1CB000ED5377 /* CompletionBlockTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CompletionBlockTypes.h; sourceTree = "<group>"; };
@@ -353,8 +370,8 @@
 		CE2A083B1F998B63009B42FB /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				CE7E69371FA70D4F002B98BF /* Home */,
 				CE2C3D821FA0554900DD2E22 /* Base */,
+				CE7E69371FA70D4F002B98BF /* Home */,
 				CE2C3D6A1FA0542600DD2E22 /* ProductList */,
 				CE34FBFC1F9EE00A00F9EA1D /* ProductDetail */,
 				CE2A08431F998C43009B42FB /* Register */,
@@ -744,6 +761,7 @@
 		CE7E69381FA70D4F002B98BF /* Module Interface */ = {
 			isa = PBXGroup;
 			children = (
+				CECC51741FAAE8FA00A4C7F4 /* HomeModuleProtocol.h */,
 			);
 			path = "Module Interface";
 			sourceTree = "<group>";
@@ -784,6 +802,8 @@
 		CE7E693D1FA70D4F002B98BF /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				CECC516E1FAAE5B800A4C7F4 /* HomePresenter.h */,
+				CECC516F1FAAE5B800A4C7F4 /* HomePresenter.m */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -791,6 +811,8 @@
 		CE7E693E1FA70D4F002B98BF /* Wireframe */ = {
 			isa = PBXGroup;
 			children = (
+				CECC51691FAAE59100A4C7F4 /* HomeWireframe.h */,
+				CECC516A1FAAE59100A4C7F4 /* HomeWireframe.m */,
 			);
 			path = Wireframe;
 			sourceTree = "<group>";
@@ -800,6 +822,7 @@
 			children = (
 				CE7E69401FA70DB7002B98BF /* HomeView.h */,
 				CE7E69411FA70DB7002B98BF /* HomeView.m */,
+				CECC51731FAAE5DE00A4C7F4 /* HomeViewProtocol.h */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -857,9 +880,19 @@
 			path = BetaProductUITests;
 			sourceTree = "<group>";
 		};
+		CECC51751FAAEA4000A4C7F4 /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				CECC51761FAAEA6800A4C7F4 /* BaseWireframe.h */,
+				CECC51771FAAEA6800A4C7F4 /* BaseWireframe.m */,
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
 		CEFF850C1FA2BE3A008E6FE0 /* User Interface */ = {
 			isa = PBXGroup;
 			children = (
+				CECC51751FAAEA4000A4C7F4 /* Wireframe */,
 				CEFF850D1FA2BE48008E6FE0 /* View */,
 			);
 			path = "User Interface";
@@ -1387,6 +1420,8 @@
 				CE7E68D81FA6B503002B98BF /* main.m in Sources */,
 				CE7E68D91FA6B503002B98BF /* ProductListInteractor.m in Sources */,
 				CE7E68DA1FA6B503002B98BF /* AppDelegate.m in Sources */,
+				CECC51701FAAE5B800A4C7F4 /* HomePresenter.m in Sources */,
+				CECC51781FAAEA6800A4C7F4 /* BaseWireframe.m in Sources */,
 				CE7E68DB1FA6B503002B98BF /* SyncEngine.m in Sources */,
 				CE7E68DC1FA6B503002B98BF /* AppDependencies.m in Sources */,
 				CE7E68DD1FA6B503002B98BF /* CompletionBlockTypes.m in Sources */,
@@ -1404,6 +1439,7 @@
 				CE7E68E81FA6B503002B98BF /* BaseView.m in Sources */,
 				CE7E68E91FA6B503002B98BF /* ManagedProduct.m in Sources */,
 				CE7E68EA1FA6B503002B98BF /* BetaProduct.xcdatamodeld in Sources */,
+				CECC516B1FAAE59100A4C7F4 /* HomeWireframe.m in Sources */,
 				CE7E68EB1FA6B503002B98BF /* ProductListPresenter.m in Sources */,
 				CE7E68EC1FA6B503002B98BF /* RegisterDataManager.m in Sources */,
 				CE7E68ED1FA6B503002B98BF /* DatabaseTypes.m in Sources */,
@@ -1425,6 +1461,8 @@
 				CE7E69091FA6B507002B98BF /* main.m in Sources */,
 				CE7E690A1FA6B507002B98BF /* ProductListInteractor.m in Sources */,
 				CE7E690B1FA6B507002B98BF /* AppDelegate.m in Sources */,
+				CECC51711FAAE5B800A4C7F4 /* HomePresenter.m in Sources */,
+				CECC51791FAAEA6800A4C7F4 /* BaseWireframe.m in Sources */,
 				CE7E690C1FA6B507002B98BF /* SyncEngine.m in Sources */,
 				CE7E690D1FA6B507002B98BF /* AppDependencies.m in Sources */,
 				CE7E690E1FA6B507002B98BF /* CompletionBlockTypes.m in Sources */,
@@ -1442,6 +1480,7 @@
 				CE7E69191FA6B507002B98BF /* BaseView.m in Sources */,
 				CE7E691A1FA6B507002B98BF /* ManagedProduct.m in Sources */,
 				CE7E691B1FA6B507002B98BF /* BetaProduct.xcdatamodeld in Sources */,
+				CECC516C1FAAE59100A4C7F4 /* HomeWireframe.m in Sources */,
 				CE7E691C1FA6B507002B98BF /* ProductListPresenter.m in Sources */,
 				CE7E691D1FA6B507002B98BF /* RegisterDataManager.m in Sources */,
 				CE7E691E1FA6B507002B98BF /* DatabaseTypes.m in Sources */,
@@ -1463,6 +1502,8 @@
 				CE2A083A1F998B54009B42FB /* main.m in Sources */,
 				CE2C3D8A1FA0623200DD2E22 /* ProductListInteractor.m in Sources */,
 				CE2A08511F998CF0009B42FB /* AppDelegate.m in Sources */,
+				CECC51721FAAE5B800A4C7F4 /* HomePresenter.m in Sources */,
+				CECC517A1FAAEA6800A4C7F4 /* BaseWireframe.m in Sources */,
 				CECD77411F9F1C6D00ED5377 /* SyncEngine.m in Sources */,
 				CE34FBE61F9ECA6800F9EA1D /* AppDependencies.m in Sources */,
 				CECD77451F9F1CB000ED5377 /* CompletionBlockTypes.m in Sources */,
@@ -1480,6 +1521,7 @@
 				CEFF85101FA2BE6B008E6FE0 /* BaseView.m in Sources */,
 				CE34FBE91F9ECEB200F9EA1D /* ManagedProduct.m in Sources */,
 				CE2A086A1F998D2C009B42FB /* BetaProduct.xcdatamodeld in Sources */,
+				CECC516D1FAAE59100A4C7F4 /* HomeWireframe.m in Sources */,
 				CE2C3D8D1FA0665C00DD2E22 /* ProductListPresenter.m in Sources */,
 				CE2A08701F998D38009B42FB /* RegisterDataManager.m in Sources */,
 				CE34FBF91F9ED7A700F9EA1D /* DatabaseTypes.m in Sources */,

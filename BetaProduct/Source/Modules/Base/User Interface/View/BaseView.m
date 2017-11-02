@@ -64,7 +64,8 @@
     self.hud.customView = imageView;
     self.hud.mode = MBProgressHUDModeCustomView;
     self.hud.label.text = @"Completed";
-    [self.hud hideAnimated:YES afterDelay:1.f];
+//    [self.hud hideAnimated:YES afterDelay:1.f];
+    [self.hud hideAnimated:YES];
 }
 
 @end

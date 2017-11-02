@@ -19,23 +19,12 @@ static NSString *ProductListViewIdentifier = @"ProductListView";
 
 @implementation ProductListWireFrame
 
-- (void)presentProductListInterfaceFromWindow:(UIWindow *)window {
-    ProductListView *productListView = [self listViewControllerFromStoryboard];
-    productListView.eventHandler = self.listPresenter;
-    self.listPresenter.view = productListView;
-    self.productListView = productListView;
-    [self.rootWireframe showRootViewController:productListView inWindow:window];
-}
-
-- (ProductListView *)listViewControllerFromStoryboard {
-    UIStoryboard *storyboard = [self mainStoryboard];
-    ProductListView *viewController = [storyboard instantiateViewControllerWithIdentifier:ProductListViewIdentifier];
-    return viewController;
-}
-
-- (UIStoryboard *)mainStoryboard {
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
-    return storyboard;
+- (ProductListView *) productListInterfaceForHomeRegistry {
+    ProductListView *viewcontroller = [[self mainStoryboard] instantiateViewControllerWithIdentifier:ProductListViewIdentifier];
+    viewcontroller.eventHandler = self.listPresenter;
+    self.listPresenter.view = viewcontroller;
+    self.productListView = viewcontroller;
+    return viewcontroller;
 }
 
 @end

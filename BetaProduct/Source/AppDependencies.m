@@ -16,9 +16,10 @@
 #import "ProductListInteractor.h"
 #import "ProductListPresenter.h"
 #import "ProductListWireFrame.h"
+#import "HomeWireframe.h"
 
 @interface AppDependencies()
-@property (nonatomic, strong) ProductListWireFrame *productListWireframe;
+@property (nonatomic, strong) HomeWireframe *homeWireframe;
 @end
 
 @implementation AppDependencies
@@ -85,12 +86,16 @@
     listPresenter.productListWireFrame = listWireframe;
     
     listWireframe.listPresenter = listPresenter;
-    listWireframe.rootWireframe = rootWireframe;
-    self.productListWireframe = listWireframe;
+    
+    // Home Module Classes
+    HomeWireframe *homeWireframe = [[HomeWireframe alloc] init];
+    homeWireframe.productListWireFrame = listWireframe;
+    homeWireframe.rootWireFrame = rootWireframe;
+    self.homeWireframe = homeWireframe;
 }
 
 - (void) installRootViewControllerInWindow:(UIWindow *)window {
-    [self.productListWireframe presentProductListInterfaceFromWindow:window];
+    [self.homeWireframe presentHomeViewInterfaceFromWindow:window];
 }
 
 @end

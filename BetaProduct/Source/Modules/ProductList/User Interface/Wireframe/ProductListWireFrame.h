@@ -6,17 +6,18 @@
 //  Copyright © 2017 User. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-#import <UIKit/UIKit.h>
+#import "BaseWireframe.h"
 
 @class ProductListPresenter;
 @class RootWireFrame;
+@class HomeWireframe;
+@class ProductListView;
 
-@interface ProductListWireFrame : NSObject
+@interface ProductListWireFrame : BaseWireframe
 
 @property (nonatomic, strong) ProductListPresenter *listPresenter;
-@property (nonatomic, strong) RootWireFrame *rootWireframe;
+@property (nonatomic, strong) HomeWireframe *homeWireFrame;
 
-- (void)presentProductListInterfaceFromWindow:(UIWindow *)window;
+- (ProductListView *) productListInterfaceForHomeRegistry;
 
 @end

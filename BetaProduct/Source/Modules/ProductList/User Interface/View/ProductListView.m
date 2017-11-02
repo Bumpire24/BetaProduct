@@ -26,10 +26,6 @@ static NSString *kProductListCell = @"productListCell";
     [super didReceiveMemoryWarning];
 }
 
-- (void) viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
-}
-
 - (void) viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     [self showProgressLoad];
@@ -48,6 +44,7 @@ static NSString *kProductListCell = @"productListCell";
 }
 
 - (void) configureLayout {
+    self.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Products" image:[UIImage imageNamed:@"products"] tag:2];
     self.view = self.noContentView;
     [super configureLayout];
 }
@@ -68,8 +65,9 @@ static NSString *kProductListCell = @"productListCell";
 #pragma mark - TableViewDataSource
 - (nonnull UITableViewCell *)tableView:(nonnull UITableView *)tableView cellForRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
     // TODO: Add Caching on images?
+    // TODO: Handle error?
     ProductListDisplayItem *item = self.products[indexPath.row];
-    UIImage *placeholderImage = [UIImage imageNamed:@"placeholder.png"];
+    UIImage *placeholderImage = [UIImage imageNamed:@"placeholder"];
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kProductListCell];
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:kProductListCell];

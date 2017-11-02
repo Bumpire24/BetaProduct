@@ -45,25 +45,43 @@
         
         _managedObjectContext = [[NSManagedObjectContext alloc] initWithConcurrencyType:NSMainQueueConcurrencyType];
         _managedObjectContext.persistentStoreCoordinator = self.persistentStoreCoordinator;
-        _managedObjectContext.undoManager = nil;
+//        _managedObjectContext.undoManager = nil;
     }
     return self;
 }
 
+#pragma mark - Public
 - (void) save {
     [self.managedObjectContext save: NULL];
 }
 
 - (void) saveWithCompletionBlock: (CompletionBlock) completionBlock {
-    [self.managedObjectContext performBlock:^{
-        NSError *error = nil;
-        [self.managedObjectContext save:&error];
-        if (!error) {
-            completionBlock(true, error);
-        } else {
-            completionBlock(false, error);
-        }
-    }];
+    NSError *error = nil;
+    [self.managedObjectContext save:&error];
+    if (!error) {
+        completionBlock(true, error);
+    } else {
+        completionBlock(false, error);
+    }
+}
+
+- (void) saveOrRollback {
+    NSError *error = nil;
+    [self.managedObjectContext save: &error];
+    if (error) {
+        [self.managedObjectContext rollback];
+    }
+}
+
+- (void) saveOrRollback:(CompletionBlock)completionBlock {
+    NSError *error = nil;
+    [self.managedObjectContext save:&error];
+    if (!error) {
+        completionBlock(true, error);
+    } else {
+        [self.managedObjectContext rollback];
+        completionBlock(false, error);
+    }
 }
 
 #pragma mark - StoreProtocol
