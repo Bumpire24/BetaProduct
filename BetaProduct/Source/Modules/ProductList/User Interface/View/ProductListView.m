@@ -28,8 +28,6 @@ static NSString *kProductListCell = @"productListCell";
 
 - (void) viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
-    [self showProgressLoad];
-    [self.eventHandler updateView];
 }
 
 #pragma mark - Private
@@ -40,12 +38,13 @@ static NSString *kProductListCell = @"productListCell";
 #pragma mark - BaseView
 - (void) configureView {
     [super configureView];
+    self.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Products" image:[UIImage imageNamed:@"products"] tag:2];
     self.products = [[NSArray alloc] init];
+    [self showProgressLoad];
+    [self.eventHandler updateView];
 }
 
 - (void) configureLayout {
-    self.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"Products" image:[UIImage imageNamed:@"products"] tag:2];
-    self.view = self.noContentView;
     [super configureLayout];
 }
 
@@ -91,6 +90,11 @@ static NSString *kProductListCell = @"productListCell";
 
 - (NSInteger)tableView:(nonnull UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return [self.products count];
+}
+
+#pragma mark - UITableViewDelegate
+- (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [self.eventHandler presentDetailViewOfProductIndex:indexPath.row];
 }
 
 @end

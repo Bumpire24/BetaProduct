@@ -13,7 +13,19 @@
 #import "NSError+Utility.h"
 #import "BetaProject.h"
 
+@interface ProductManager()
+@property(nonatomic, strong) NSArray *retrievedConvertedProducts;
+@end
+
 @implementation ProductManager
+
+- (id) init {
+    self = [super init];
+    if (self) {
+        self.retrievedConvertedProducts = [[NSArray alloc] init];
+    }
+    return self;
+}
 
 - (void) getProducts:(ManagerCompletionBlockWithResults)block {
     NSPredicate *predicate = [NSPredicate predicateWithFormat:@"status != %d", StatusDeleted];
@@ -21,7 +33,8 @@
         __weak typeof(self) welf = self;
         if (isSuccesful) {
             if (results.count > 0) {
-                block(isSuccesful, error, [welf managedProductFromDataStoreEntries:results]);
+                self.retrievedConvertedProducts = [welf managedProductFromDataStoreEntries:results];
+                block(isSuccesful, error, self.retrievedConvertedProducts);
             } else {
                 NSError *errorResults = [[NSError alloc] initWithDomain:kBetaProject_ErrorDomain
                                                               WithCode:BetaProjectErrorDatabase
@@ -32,12 +45,21 @@
                            errorResults.localizedDescription,
                            errorResults.localizedFailureReason,
                            errorResults.localizedFailureReason);
-                block(false, errorResults, nil);
+                block(false, errorResults, @[]);
             }
         } else {
-            block(isSuccesful, error, nil);
+            block(isSuccesful, error, @[]);
         }
     }];
+}
+
+- (ManagedProduct *) getPersistedProductById:(int)index {
+    if (self.retrievedConvertedProducts != nil) {
+        if ([self.retrievedConvertedProducts objectAtIndex:index]) {
+            return [self.retrievedConvertedProducts objectAtIndex:index];
+        }
+    }
+    return nil;
 }
 
 - (NSArray *)managedProductFromDataStoreEntries:(NSArray *)entries
@@ -49,6 +71,7 @@
                               WithPriceDescription:product.priceDescription
                                           WithLink:product.weblink
                                      WithImageLink:product.imageUrl
+                                WithImageThumbLink:product.imageThumbUrl
                               WithCompanyImageLink:product.imageCompanyUrl
                                      WithProductId:product.productId.integerValue
                                         WithStatus:product.status];

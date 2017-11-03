@@ -9,11 +9,11 @@
 #import <XCTest/XCTest.h>
 #import "ProductListView.h"
 
-@interface BetaProductView : XCTestCase
+@interface BetaProductViewTests : XCTestCase
 @property (nonatomic, strong) ProductListView *view;
 @end
 
-@implementation BetaProductView
+@implementation BetaProductViewTests
 
 - (void)setUp {
     [super setUp];

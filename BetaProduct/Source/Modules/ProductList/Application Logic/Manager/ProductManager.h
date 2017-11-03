@@ -19,5 +19,6 @@ typedef void(^ManagerCompletionBlockWithResult)(BOOL isSuccessful, NSError *erro
 @property(nonatomic, strong) StoreCore* store;
 
 - (void) getProducts : (ManagerCompletionBlockWithResults) block;
+- (ManagedProduct *) getPersistedProductById : (int) index;
 
 @end

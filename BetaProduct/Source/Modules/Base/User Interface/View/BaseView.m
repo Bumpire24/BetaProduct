@@ -19,11 +19,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self configureView];
+    [self configureLayout];
 }
 
 - (void) viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    [self configureLayout];
 }
 
 - (void) viewDidAppear:(BOOL)animated {
@@ -36,18 +36,20 @@
 
 #pragma mark - Private
 - (void) setUpProgressLoader {
-    self.hud = [MBProgressHUD showHUDAddedTo:self.navigationController.view animated:YES];
+    self.hud = [[MBProgressHUD alloc] initWithView:self.view];
     self.hud.animationType = MBProgressHUDAnimationFade;
     self.hud.label.text = @"Loading Data";
+    [self.view addSubview:self.hud];
+//    self.hud = [MBProgressHUD showHUDAddedTo:self.navigationController.view animated:YES];
 }
                 
 #pragma mark - Public
 - (void) configureView {
-    
+    [self setUpProgressLoader];
 }
 
 - (void) configureLayout {
-    [self setUpProgressLoader];
+    
 }
 
 - (void) showProgressLoad {
@@ -64,8 +66,8 @@
     self.hud.customView = imageView;
     self.hud.mode = MBProgressHUDModeCustomView;
     self.hud.label.text = @"Completed";
-//    [self.hud hideAnimated:YES afterDelay:1.f];
-    [self.hud hideAnimated:YES];
+    [self.hud hideAnimated:YES afterDelay:1.f];
+//    [self.hud hideAnimated:YES];
 }
 
 @end

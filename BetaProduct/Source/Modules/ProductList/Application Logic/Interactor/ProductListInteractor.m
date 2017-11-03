@@ -75,7 +75,7 @@ static NSString *kInitialSyncComplete = @"InitialSyncComplete";
 - (NSArray *) displayItemsFromProducts : (NSArray *) products {
     NSArray *items = (products != nil) ? products : @[];
     return [items arrayFromObjectsCollectedWithBlock:^id(ManagedProduct *product) {
-        return [ProductListDisplayItem MakeProductListItemWithName:product.name WithDetail:product.productDescription WithURL:[NSURL URLWithString:product.imageUrl]];
+        return [ProductListDisplayItem MakeProductListItemWithName:product.name WithDetail:product.productDescription WithURL:[NSURL URLWithString:product.imageThumbnailUrl]];
     }];
 }
 

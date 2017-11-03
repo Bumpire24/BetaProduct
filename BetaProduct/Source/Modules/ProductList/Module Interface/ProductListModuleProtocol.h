@@ -11,5 +11,6 @@
 @protocol ProductListModuleProtocol <NSObject>
 
 - (void) updateView;
+- (void) presentDetailViewOfProductIndex : (NSInteger) index;
 
 @end

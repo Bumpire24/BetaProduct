@@ -16,6 +16,7 @@
 @dynamic price;
 @dynamic priceDescription;
 @dynamic imageUrl;
+@dynamic imageThumbUrl;
 @dynamic imageCompanyUrl;
 @dynamic productId;
 

@@ -12,12 +12,15 @@
 @class RootWireFrame;
 @class HomeWireframe;
 @class ProductListView;
+@class ProductDetailWireframe;
 
 @interface ProductListWireFrame : BaseWireframe
 
 @property (nonatomic, strong) ProductListPresenter *listPresenter;
 @property (nonatomic, strong) HomeWireframe *homeWireFrame;
+@property (nonatomic, strong) ProductDetailWireframe *detailWireframe;
 
 - (ProductListView *) productListInterfaceForHomeRegistry;
+- (void) presentProductDetailViewWithProductIndex : (NSInteger) index;
 
 @end

@@ -16,6 +16,9 @@
 #import "ProductListInteractor.h"
 #import "ProductListPresenter.h"
 #import "ProductListWireFrame.h"
+#import "ProductDetailInteractor.h"
+#import "ProductDetailPresenter.h"
+#import "ProductDetailWireframe.h"
 #import "HomeWireframe.h"
 
 @interface AppDependencies()
@@ -86,6 +89,21 @@
     listPresenter.productListWireFrame = listWireframe;
     
     listWireframe.listPresenter = listPresenter;
+    
+    //Product Detail Module Classes
+    ProductDetailInteractor *detailInteractor = [[ProductDetailInteractor alloc] init];
+    ProductDetailPresenter *detailPresenter = [[ProductDetailPresenter alloc] init];
+    ProductDetailWireframe *detailWireframe = [[ProductDetailWireframe alloc] init];
+    
+    detailInteractor.manager = listDataManager;
+    detailInteractor.output = detailPresenter;
+    
+    detailPresenter.interactor = detailInteractor;
+    detailPresenter.detailwireframe = detailWireframe;
+    
+    detailWireframe.presenter = detailPresenter;
+    
+    listWireframe.detailWireframe = detailWireframe;
     
     // Home Module Classes
     HomeWireframe *homeWireframe = [[HomeWireframe alloc] init];

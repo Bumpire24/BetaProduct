@@ -10,6 +10,7 @@
 #import "ProductListPresenter.h"
 #import "ProductListView.h"
 #import "RootWireFrame.h"
+#import "ProductDetailWireframe.h"
 
 static NSString *ProductListViewIdentifier = @"ProductListView";
 
@@ -25,6 +26,10 @@ static NSString *ProductListViewIdentifier = @"ProductListView";
     self.listPresenter.view = viewcontroller;
     self.productListView = viewcontroller;
     return viewcontroller;
+}
+
+- (void) presentProductDetailViewWithProductIndex : (NSInteger) index {
+    [self.detailWireframe pushProductDetailViewFromViewController:self.productListView WithProductIndex:index];
 }
 
 @end

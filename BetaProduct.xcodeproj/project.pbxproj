@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B5C41B2AAC07D1DE6ACE0DBD /* Pods_BetaProductUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30AD0EE9067F8287AA87AFBF /* Pods_BetaProductUITests.framework */; };
+		CE0569461FABF3FA00DF93D4 /* BetaProductPresenterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0569451FABF3FA00DF93D4 /* BetaProductPresenterTests.m */; };
 		CE2A083A1F998B54009B42FB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2A08381F998B54009B42FB /* main.m */; };
 		CE2A08511F998CF0009B42FB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2A084F1F998CF0009B42FB /* AppDelegate.m */; };
 		CE2A08541F998D08009B42FB /* BetaProject.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2A08531F998D08009B42FB /* BetaProject.m */; };
@@ -118,7 +119,7 @@
 		CE7E69441FA70DB7002B98BF /* HomeView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7E69411FA70DB7002B98BF /* HomeView.m */; };
 		CE9839001F9F3D8300B177F9 /* Pods_BetaProduct.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9839011F9F3D8300B177F9 /* Pods_BetaProduct.framework */; };
 		CE9D2E1F1F95D65200DC22AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE9D2E1E1F95D65200DC22AF /* Assets.xcassets */; };
-		CE9D2E2D1F95D65200DC22AF /* BetaProductTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9D2E2C1F95D65200DC22AF /* BetaProductTests.m */; };
+		CE9D2E2D1F95D65200DC22AF /* BetaProductInteractorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9D2E2C1F95D65200DC22AF /* BetaProductInteractorTests.m */; };
 		CECC516B1FAAE59100A4C7F4 /* HomeWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = CECC516A1FAAE59100A4C7F4 /* HomeWireframe.m */; };
 		CECC516C1FAAE59100A4C7F4 /* HomeWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = CECC516A1FAAE59100A4C7F4 /* HomeWireframe.m */; };
 		CECC516D1FAAE59100A4C7F4 /* HomeWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = CECC516A1FAAE59100A4C7F4 /* HomeWireframe.m */; };
@@ -130,16 +131,38 @@
 		CECC517A1FAAEA6800A4C7F4 /* BaseWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = CECC51771FAAEA6800A4C7F4 /* BaseWireframe.m */; };
 		CECD77411F9F1C6D00ED5377 /* SyncEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = CECD77401F9F1C6D00ED5377 /* SyncEngine.m */; };
 		CECD77451F9F1CB000ED5377 /* CompletionBlockTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = CECD77441F9F1CB000ED5377 /* CompletionBlockTypes.m */; };
+		CED0D9851FAC492800AB75B3 /* ProductDetailInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = CED0D9841FAC492800AB75B3 /* ProductDetailInteractor.m */; };
+		CED0D9861FAC492800AB75B3 /* ProductDetailInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = CED0D9841FAC492800AB75B3 /* ProductDetailInteractor.m */; };
+		CED0D9871FAC492800AB75B3 /* ProductDetailInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = CED0D9841FAC492800AB75B3 /* ProductDetailInteractor.m */; };
+		CED0D98A1FAC4B0600AB75B3 /* ProductDetailDisplayItem.m in Sources */ = {isa = PBXBuildFile; fileRef = CED0D9891FAC4B0600AB75B3 /* ProductDetailDisplayItem.m */; };
+		CED0D98B1FAC4B0600AB75B3 /* ProductDetailDisplayItem.m in Sources */ = {isa = PBXBuildFile; fileRef = CED0D9891FAC4B0600AB75B3 /* ProductDetailDisplayItem.m */; };
+		CED0D98C1FAC4B0600AB75B3 /* ProductDetailDisplayItem.m in Sources */ = {isa = PBXBuildFile; fileRef = CED0D9891FAC4B0600AB75B3 /* ProductDetailDisplayItem.m */; };
+		CED0D98F1FAC502600AB75B3 /* ProductDetailPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = CED0D98E1FAC502600AB75B3 /* ProductDetailPresenter.m */; };
+		CED0D9901FAC502600AB75B3 /* ProductDetailPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = CED0D98E1FAC502600AB75B3 /* ProductDetailPresenter.m */; };
+		CED0D9911FAC502600AB75B3 /* ProductDetailPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = CED0D98E1FAC502600AB75B3 /* ProductDetailPresenter.m */; };
+		CED0D9941FAC53C700AB75B3 /* ProductDetailWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = CED0D9931FAC53C700AB75B3 /* ProductDetailWireframe.m */; };
+		CED0D9951FAC53C700AB75B3 /* ProductDetailWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = CED0D9931FAC53C700AB75B3 /* ProductDetailWireframe.m */; };
+		CED0D9961FAC53C700AB75B3 /* ProductDetailWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = CED0D9931FAC53C700AB75B3 /* ProductDetailWireframe.m */; };
+		CED0D99F1FAC549900AB75B3 /* ProductDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = CED0D99E1FAC549900AB75B3 /* ProductDetailView.m */; };
+		CED0D9A01FAC549900AB75B3 /* ProductDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = CED0D99E1FAC549900AB75B3 /* ProductDetailView.m */; };
+		CED0D9A11FAC549900AB75B3 /* ProductDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = CED0D99E1FAC549900AB75B3 /* ProductDetailView.m */; };
 		CEFD03BB1FA2FB84006CE0FF /* BetaProductUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9D2E371F95D65200DC22AF /* BetaProductUITests.m */; };
 		CEFD03BD1FA2FC1C006CE0FF /* info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE2A08371F998B53009B42FB /* info.plist */; };
 		CEFD03C01FA2FD29006CE0FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEFD03BE1FA2FD29006CE0FF /* Main.storyboard */; };
-		CEFD03C21FA2FEE4006CE0FF /* BetaProductView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFD03C11FA2FEE4006CE0FF /* BetaProductView.m */; };
+		CEFD03C21FA2FEE4006CE0FF /* BetaProductViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFD03C11FA2FEE4006CE0FF /* BetaProductViewTests.m */; };
 		CEFF85101FA2BE6B008E6FE0 /* BaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFF850F1FA2BE6B008E6FE0 /* BaseView.m */; };
 		CEFF85111FA2BE6B008E6FE0 /* BaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFF850F1FA2BE6B008E6FE0 /* BaseView.m */; };
 		E6AB82A32DF6A94D85EE7780 /* Pods_BetaProductTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEE36F52A971965E54AD9888 /* Pods_BetaProductTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		CE0569471FABF67F00DF93D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE9D2E041F95D65200DC22AF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE7E68D41FA6B503002B98BF;
+			remoteInfo = "BetaProduct DEV";
+		};
 		CE9D2E291F95D65200DC22AF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CE9D2E041F95D65200DC22AF /* Project object */;
@@ -162,6 +185,7 @@
 		594C0AE0F0B16584CC8243B4 /* Pods-BetaProduct.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BetaProduct.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BetaProduct/Pods-BetaProduct.debug.xcconfig"; sourceTree = "<group>"; };
 		8B3561BDF068C751B873DE0B /* Pods-BetaProductUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BetaProductUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BetaProductUITests/Pods-BetaProductUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		913520B137C6901CDDC42C2C /* Pods-BetaProductTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BetaProductTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BetaProductTests/Pods-BetaProductTests.release.xcconfig"; sourceTree = "<group>"; };
+		CE0569451FABF3FA00DF93D4 /* BetaProductPresenterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BetaProductPresenterTests.m; sourceTree = "<group>"; };
 		CE2A08371F998B53009B42FB /* info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = info.plist; sourceTree = "<group>"; };
 		CE2A08381F998B54009B42FB /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CE2A084E1F998CF0009B42FB /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -233,7 +257,7 @@
 		CE9D2E1E1F95D65200DC22AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE9D2E211F95D65200DC22AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE9D2E281F95D65200DC22AF /* BetaProductTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BetaProductTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CE9D2E2C1F95D65200DC22AF /* BetaProductTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BetaProductTests.m; sourceTree = "<group>"; };
+		CE9D2E2C1F95D65200DC22AF /* BetaProductInteractorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BetaProductInteractorTests.m; sourceTree = "<group>"; };
 		CE9D2E2E1F95D65200DC22AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE9D2E331F95D65200DC22AF /* BetaProductUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BetaProductUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE9D2E371F95D65200DC22AF /* BetaProductUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BetaProductUITests.m; sourceTree = "<group>"; };
@@ -251,8 +275,21 @@
 		CECD77431F9F1CB000ED5377 /* CompletionBlockTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CompletionBlockTypes.h; sourceTree = "<group>"; };
 		CECD77441F9F1CB000ED5377 /* CompletionBlockTypes.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CompletionBlockTypes.m; sourceTree = "<group>"; };
 		CECD77461F9F21C500ED5377 /* StoreWebClientProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StoreWebClientProtocol.h; sourceTree = "<group>"; };
+		CED0D9821FAC486500AB75B3 /* ProductDetailIO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductDetailIO.h; sourceTree = "<group>"; };
+		CED0D9831FAC492800AB75B3 /* ProductDetailInteractor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductDetailInteractor.h; sourceTree = "<group>"; };
+		CED0D9841FAC492800AB75B3 /* ProductDetailInteractor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProductDetailInteractor.m; sourceTree = "<group>"; };
+		CED0D9881FAC4B0600AB75B3 /* ProductDetailDisplayItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductDetailDisplayItem.h; sourceTree = "<group>"; };
+		CED0D9891FAC4B0600AB75B3 /* ProductDetailDisplayItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProductDetailDisplayItem.m; sourceTree = "<group>"; };
+		CED0D98D1FAC502600AB75B3 /* ProductDetailPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductDetailPresenter.h; sourceTree = "<group>"; };
+		CED0D98E1FAC502600AB75B3 /* ProductDetailPresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProductDetailPresenter.m; sourceTree = "<group>"; };
+		CED0D9921FAC53C700AB75B3 /* ProductDetailWireframe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductDetailWireframe.h; sourceTree = "<group>"; };
+		CED0D9931FAC53C700AB75B3 /* ProductDetailWireframe.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProductDetailWireframe.m; sourceTree = "<group>"; };
+		CED0D9971FAC53E600AB75B3 /* ProductDetailViewProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductDetailViewProtocol.h; sourceTree = "<group>"; };
+		CED0D99D1FAC549900AB75B3 /* ProductDetailView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductDetailView.h; sourceTree = "<group>"; };
+		CED0D99E1FAC549900AB75B3 /* ProductDetailView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProductDetailView.m; sourceTree = "<group>"; };
+		CED0D9A31FAC5B0B00AB75B3 /* ProductDetailModuleProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductDetailModuleProtocol.h; sourceTree = "<group>"; };
 		CEFD03BF1FA2FD29006CE0FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		CEFD03C11FA2FEE4006CE0FF /* BetaProductView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BetaProductView.m; sourceTree = "<group>"; };
+		CEFD03C11FA2FEE4006CE0FF /* BetaProductViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BetaProductViewTests.m; sourceTree = "<group>"; };
 		CEFF850E1FA2BE6B008E6FE0 /* BaseView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseView.h; sourceTree = "<group>"; };
 		CEFF850F1FA2BE6B008E6FE0 /* BaseView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseView.m; sourceTree = "<group>"; };
 		DC3E6598C58C1AA51C5422F3 /* Pods-BetaProductUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BetaProductUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BetaProductUITests/Pods-BetaProductUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -690,6 +727,7 @@
 		CE34FBFD1F9EE00A00F9EA1D /* Module Interface */ = {
 			isa = PBXGroup;
 			children = (
+				CED0D9A31FAC5B0B00AB75B3 /* ProductDetailModuleProtocol.h */,
 			);
 			path = "Module Interface";
 			sourceTree = "<group>";
@@ -713,6 +751,9 @@
 		CE34FC001F9EE00A00F9EA1D /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
+				CED0D9821FAC486500AB75B3 /* ProductDetailIO.h */,
+				CED0D9831FAC492800AB75B3 /* ProductDetailInteractor.h */,
+				CED0D9841FAC492800AB75B3 /* ProductDetailInteractor.m */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -730,6 +771,10 @@
 		CE34FC021F9EE00A00F9EA1D /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				CED0D9881FAC4B0600AB75B3 /* ProductDetailDisplayItem.h */,
+				CED0D9891FAC4B0600AB75B3 /* ProductDetailDisplayItem.m */,
+				CED0D98D1FAC502600AB75B3 /* ProductDetailPresenter.h */,
+				CED0D98E1FAC502600AB75B3 /* ProductDetailPresenter.m */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -737,6 +782,8 @@
 		CE34FC031F9EE00A00F9EA1D /* Wireframe */ = {
 			isa = PBXGroup;
 			children = (
+				CED0D9921FAC53C700AB75B3 /* ProductDetailWireframe.h */,
+				CED0D9931FAC53C700AB75B3 /* ProductDetailWireframe.m */,
 			);
 			path = Wireframe;
 			sourceTree = "<group>";
@@ -744,6 +791,9 @@
 		CE34FC041F9EE00A00F9EA1D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CED0D9971FAC53E600AB75B3 /* ProductDetailViewProtocol.h */,
+				CED0D99D1FAC549900AB75B3 /* ProductDetailView.h */,
+				CED0D99E1FAC549900AB75B3 /* ProductDetailView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -833,9 +883,9 @@
 				CE9D2E0E1F95D65200DC22AF /* BetaProduct */,
 				CE9D2E2B1F95D65200DC22AF /* BetaProductTests */,
 				CE9D2E361F95D65200DC22AF /* BetaProductUITests */,
-				CE9D2E0D1F95D65200DC22AF /* Products */,
 				AB5B2097C59C086E98D90678 /* Frameworks */,
 				59FF004B655FF79A2FFDC5A5 /* Pods */,
+				CE9D2E0D1F95D65200DC22AF /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -864,9 +914,10 @@
 		CE9D2E2B1F95D65200DC22AF /* BetaProductTests */ = {
 			isa = PBXGroup;
 			children = (
-				CE9D2E2C1F95D65200DC22AF /* BetaProductTests.m */,
 				CE9D2E2E1F95D65200DC22AF /* Info.plist */,
-				CEFD03C11FA2FEE4006CE0FF /* BetaProductView.m */,
+				CE9D2E2C1F95D65200DC22AF /* BetaProductInteractorTests.m */,
+				CEFD03C11FA2FEE4006CE0FF /* BetaProductViewTests.m */,
+				CE0569451FABF3FA00DF93D4 /* BetaProductPresenterTests.m */,
 			);
 			path = BetaProductTests;
 			sourceTree = "<group>";
@@ -985,6 +1036,7 @@
 			);
 			dependencies = (
 				CE9D2E2A1F95D65200DC22AF /* PBXTargetDependency */,
+				CE0569481FABF67F00DF93D4 /* PBXTargetDependency */,
 			);
 			name = BetaProductTests;
 			productName = BetaProductTests;
@@ -1026,7 +1078,7 @@
 					};
 					CE9D2E271F95D65200DC22AF = {
 						CreatedOnToolsVersion = 7.1;
-						TestTargetID = CE9D2E0B1F95D65200DC22AF;
+						TestTargetID = CE7E68D41FA6B503002B98BF;
 					};
 					CE9D2E321F95D65200DC22AF = {
 						CreatedOnToolsVersion = 7.1;
@@ -1416,6 +1468,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CED0D99F1FAC549900AB75B3 /* ProductDetailView.m in Sources */,
 				CE7E68D71FA6B503002B98BF /* ProductListWireFrame.m in Sources */,
 				CE7E68D81FA6B503002B98BF /* main.m in Sources */,
 				CE7E68D91FA6B503002B98BF /* ProductListInteractor.m in Sources */,
@@ -1438,6 +1491,7 @@
 				CE7E68E71FA6B503002B98BF /* StoreWebClient.m in Sources */,
 				CE7E68E81FA6B503002B98BF /* BaseView.m in Sources */,
 				CE7E68E91FA6B503002B98BF /* ManagedProduct.m in Sources */,
+				CED0D98A1FAC4B0600AB75B3 /* ProductDetailDisplayItem.m in Sources */,
 				CE7E68EA1FA6B503002B98BF /* BetaProduct.xcdatamodeld in Sources */,
 				CECC516B1FAAE59100A4C7F4 /* HomeWireframe.m in Sources */,
 				CE7E68EB1FA6B503002B98BF /* ProductListPresenter.m in Sources */,
@@ -1447,7 +1501,10 @@
 				CE7E68EF1FA6B503002B98BF /* ManagedUser.m in Sources */,
 				CE7E68F01FA6B503002B98BF /* ProductManager.m in Sources */,
 				CE7E68F11FA6B503002B98BF /* BetaProject.m in Sources */,
+				CED0D9851FAC492800AB75B3 /* ProductDetailInteractor.m in Sources */,
+				CED0D98F1FAC502600AB75B3 /* ProductDetailPresenter.m in Sources */,
 				CE7E68F21FA6B503002B98BF /* NSError+Utility.m in Sources */,
+				CED0D9941FAC53C700AB75B3 /* ProductDetailWireframe.m in Sources */,
 				CE7E68F31FA6B503002B98BF /* WSConverter.m in Sources */,
 				CE7E68F41FA6B503002B98BF /* BaseEntity.m in Sources */,
 			);
@@ -1457,6 +1514,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CED0D9A01FAC549900AB75B3 /* ProductDetailView.m in Sources */,
 				CE7E69081FA6B507002B98BF /* ProductListWireFrame.m in Sources */,
 				CE7E69091FA6B507002B98BF /* main.m in Sources */,
 				CE7E690A1FA6B507002B98BF /* ProductListInteractor.m in Sources */,
@@ -1479,6 +1537,7 @@
 				CE7E69181FA6B507002B98BF /* StoreWebClient.m in Sources */,
 				CE7E69191FA6B507002B98BF /* BaseView.m in Sources */,
 				CE7E691A1FA6B507002B98BF /* ManagedProduct.m in Sources */,
+				CED0D98B1FAC4B0600AB75B3 /* ProductDetailDisplayItem.m in Sources */,
 				CE7E691B1FA6B507002B98BF /* BetaProduct.xcdatamodeld in Sources */,
 				CECC516C1FAAE59100A4C7F4 /* HomeWireframe.m in Sources */,
 				CE7E691C1FA6B507002B98BF /* ProductListPresenter.m in Sources */,
@@ -1488,7 +1547,10 @@
 				CE7E69201FA6B507002B98BF /* ManagedUser.m in Sources */,
 				CE7E69211FA6B507002B98BF /* ProductManager.m in Sources */,
 				CE7E69221FA6B507002B98BF /* BetaProject.m in Sources */,
+				CED0D9861FAC492800AB75B3 /* ProductDetailInteractor.m in Sources */,
+				CED0D9901FAC502600AB75B3 /* ProductDetailPresenter.m in Sources */,
 				CE7E69231FA6B507002B98BF /* NSError+Utility.m in Sources */,
+				CED0D9951FAC53C700AB75B3 /* ProductDetailWireframe.m in Sources */,
 				CE7E69241FA6B507002B98BF /* WSConverter.m in Sources */,
 				CE7E69251FA6B507002B98BF /* BaseEntity.m in Sources */,
 			);
@@ -1498,6 +1560,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CED0D9A11FAC549900AB75B3 /* ProductDetailView.m in Sources */,
 				CE2C3D961FA07BE300DD2E22 /* ProductListWireFrame.m in Sources */,
 				CE2A083A1F998B54009B42FB /* main.m in Sources */,
 				CE2C3D8A1FA0623200DD2E22 /* ProductListInteractor.m in Sources */,
@@ -1520,6 +1583,7 @@
 				CE2A086D1F998D2C009B42FB /* StoreWebClient.m in Sources */,
 				CEFF85101FA2BE6B008E6FE0 /* BaseView.m in Sources */,
 				CE34FBE91F9ECEB200F9EA1D /* ManagedProduct.m in Sources */,
+				CED0D98C1FAC4B0600AB75B3 /* ProductDetailDisplayItem.m in Sources */,
 				CE2A086A1F998D2C009B42FB /* BetaProduct.xcdatamodeld in Sources */,
 				CECC516D1FAAE59100A4C7F4 /* HomeWireframe.m in Sources */,
 				CE2C3D8D1FA0665C00DD2E22 /* ProductListPresenter.m in Sources */,
@@ -1529,7 +1593,10 @@
 				CE2A085D1F998D1C009B42FB /* ManagedUser.m in Sources */,
 				CE2C3D811FA054B600DD2E22 /* ProductManager.m in Sources */,
 				CE2A08541F998D08009B42FB /* BetaProject.m in Sources */,
+				CED0D9871FAC492800AB75B3 /* ProductDetailInteractor.m in Sources */,
+				CED0D9911FAC502600AB75B3 /* ProductDetailPresenter.m in Sources */,
 				CE2A08591F998D0F009B42FB /* NSError+Utility.m in Sources */,
+				CED0D9961FAC53C700AB75B3 /* ProductDetailWireframe.m in Sources */,
 				CE2C3D541FA02A0800DD2E22 /* WSConverter.m in Sources */,
 				CE34FBEC1F9ECF3800F9EA1D /* BaseEntity.m in Sources */,
 			);
@@ -1539,8 +1606,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEFD03C21FA2FEE4006CE0FF /* BetaProductView.m in Sources */,
-				CE9D2E2D1F95D65200DC22AF /* BetaProductTests.m in Sources */,
+				CE0569461FABF3FA00DF93D4 /* BetaProductPresenterTests.m in Sources */,
+				CEFD03C21FA2FEE4006CE0FF /* BetaProductViewTests.m in Sources */,
+				CE9D2E2D1F95D65200DC22AF /* BetaProductInteractorTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1556,6 +1624,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		CE0569481FABF67F00DF93D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE7E68D41FA6B503002B98BF /* BetaProduct DEV */;
+			targetProxy = CE0569471FABF67F00DF93D4 /* PBXContainerItemProxy */;
+		};
 		CE9D2E2A1F95D65200DC22AF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = CE9D2E0B1F95D65200DC22AF /* BetaProduct PROD */;
@@ -1953,7 +2026,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.outsourced.BetaProductTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BetaProduct.app/BetaProduct";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BetaProduct DEV.app/BetaProduct DEV";
 			};
 			name = Debug;
 		};
@@ -1970,7 +2043,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.outsourced.BetaProductTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BetaProduct.app/BetaProduct";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BetaProduct DEV.app/BetaProduct DEV";
 			};
 			name = Release;
 		};

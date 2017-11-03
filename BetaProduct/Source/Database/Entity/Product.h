@@ -16,6 +16,7 @@
 @property(nonatomic, nullable, copy) NSString *price;
 @property(nonatomic, nullable, copy) NSString *priceDescription;
 @property(nonatomic, nullable, copy) NSString *imageUrl;
+@property(nonatomic, nullable, copy) NSString *imageThumbUrl;
 @property(nonatomic, nullable, copy) NSString *imageCompanyUrl;
 @property(nonatomic, nullable, copy) NSNumber *productId;
 
